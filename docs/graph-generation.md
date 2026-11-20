@@ -53,11 +53,25 @@ roots.
 
 Run `uv run generate-graph --level classic --seed 42` for one level, or add
 `--all-levels` to process all four current levels. The command accepts the
-same Godot configuration options as `run-episode`, plus `--graph-dir` and
-`--route-step-limit` (default 1800 physics steps). Each level is reset with a
-deterministic seed, its geometry is exported, and its movement candidates are
-probed by Godot. After Godot accepts the generated graph, it is atomically
-written as `graphs/<level>.json`.
+same Godot configuration options as `run-episode`, plus `--graph-dir`,
+`--report-dir`, `--geometry-dir`, and `--route-step-limit` (default 1800
+physics steps). Each level is reset with a deterministic seed, its geometry
+is exported, and its movement candidates are probed by Godot. After Godot
+accepts the generated graph, the graph, exported geometry, and complete
+generation report are atomically written as `graphs/<level>.json`,
+`geometry/<level>.json`, and `reports/<level>.json`. The report includes the
+artifact paths and physical route-check result. By default, `reports/` and
+`geometry/` sit beside the graph directory; use the directory options to
+choose other locations.
+
+For example, to keep artifacts for a particular run together:
+
+```sh
+uv run generate-graph --level classic --seed 42 \\
+  --graph-dir build/classic/graphs \\
+  --report-dir build/classic/reports \\
+  --geometry-dir build/classic/geometry
+```
 
 The route smoke check starts at the graph node nearest player 2's reset
 position, prefers a reachable route using a probe-validated non-WALK edge,

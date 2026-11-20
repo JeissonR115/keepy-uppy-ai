@@ -46,10 +46,10 @@ def _observation_payload() -> dict[str, Any]:
     }
 
 
-def _terminal_event() -> EpisodeEvent:
+def _terminal_event(event_type: str = "point") -> EpisodeEvent:
     return EpisodeEvent.from_payload(
         {
-            "type": "point",
+            "type": event_type,
             "reason": "spikes",
             "player": "player_2",
             "winner": "player_1",
@@ -75,13 +75,14 @@ def _event_payload(event: EpisodeEvent) -> dict[str, Any]:
 
 
 class _FakeBridge:
-    def __init__(self) -> None:
+    def __init__(self, faults_per_episode: int = 0) -> None:
         self.messages: list[Any] = []
         self.command_sequence = 0
         self.action_sequence = 0
         self.actions: list[tuple[int, CPUIntent]] = []
         self.resets: list[tuple[int, str]] = []
         self.closed = False
+        self.faults_per_episode = faults_per_episode
 
     def reset(self, seed: int, level: str) -> int:
         self.resets.append((seed, level))
@@ -99,6 +100,8 @@ class _FakeBridge:
         self.command_sequence += 1
         self.action_sequence += 1
         event = _terminal_event()
+        events = [_event_payload(_terminal_event("fault")) for _ in range(self.faults_per_episode)]
+        events.append(_event_payload(event))
         self.messages.extend(
             [
                 ObservationMessage(
@@ -111,7 +114,7 @@ class _FakeBridge:
                     {
                         "episode_ended": True,
                         "observation": _observation_payload(),
-                        "events": [_event_payload(event)],
+                        "events": events,
                     },
                 ),
             ]
@@ -151,6 +154,38 @@ def test_episode_batch_reports_seed_level_and_terminal_reason() -> None:
     assert [line["terminal_reason"] for line in lines] == ["spikes", "spikes"]
     assert all(line["level"] == "classic" for line in lines)
     assert all(line["episode_event"] == "point" for line in lines)
+    assert all(line["faults"] == 0 for line in lines)
+
+
+def test_episode_batch_appends_jsonl_and_counts_faults() -> None:
+    bridge = _FakeBridge(faults_per_episode=2)
+    stdout = io.StringIO()
+    saved = io.StringIO()
+
+    with CPUTrainingEnv(bridge, owns_client=True) as env:
+        run_episode_batch(
+            env,
+            episode_count=1,
+            seed=40,
+            level="classic",
+            output=stdout,
+            episode_output=saved,
+        )
+        run_episode_batch(
+            env,
+            episode_count=1,
+            seed=41,
+            level="classic",
+            output=stdout,
+            episode_output=saved,
+        )
+
+    saved_lines = [json.loads(line) for line in saved.getvalue().splitlines()]
+    stdout_lines = [json.loads(line) for line in stdout.getvalue().splitlines()]
+    assert len(saved_lines) == len(stdout_lines) == 2
+    assert [line["seed"] for line in saved_lines] == [40, 41]
+    assert all(line["faults"] == 2 for line in saved_lines)
+    assert saved.getvalue() == stdout.getvalue()
 
 
 def test_run_episode_help_lists_documented_options(capsys: pytest.CaptureFixture[str]) -> None:

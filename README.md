@@ -107,3 +107,8 @@ route-check result. Graph generation runs real Godot movement probes and may
 take several minutes for larger levels.
 
 See [OpenSpec conventions](docs/openspec-conventions.md) for change-planning practices.
+
+Install and start the optional local visualization panel with
+`uv sync --extra viz` and `uv run keepy-dashboard`. See the
+[dashboard guide](docs/dashboard.md) for its pages, artifact formats, and
+screenshots.

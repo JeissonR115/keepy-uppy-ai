@@ -150,18 +150,27 @@ def test_generate_graph_loads_and_exercises_route_with_fake_bridge(
         bridge,
         ("classic",),
         graph_directory=tmp_path,
+        report_directory=tmp_path / "reports",
+        geometry_directory=tmp_path / "geometry",
         seed=17,
         route_step_limit=20,
     )
 
     graph_path = tmp_path / "classic.json"
+    geometry_path = tmp_path / "geometry" / "classic.json"
+    report_path = tmp_path / "reports" / "classic.json"
     graph = json.loads(graph_path.read_text(encoding="utf-8"))
+    geometry = json.loads(geometry_path.read_text(encoding="utf-8"))
+    persisted_report = json.loads(report_path.read_text(encoding="utf-8"))
     assert graph["schema_version"] == 1
     assert graph["level"] == "classic"
     assert bridge.graph == graph
+    assert geometry == _geometry_payload()
+    assert persisted_report == reports[0]
     assert reports[0]["route_check"]["passed"] is True
     assert reports[0]["route_check"]["steps"] == 2
     assert reports[0]["graph_path"] == str(graph_path)
+    assert reports[0]["geometry_path"] == str(geometry_path)
 
 
 def test_route_selection_prefers_probe_validated_motion() -> None:

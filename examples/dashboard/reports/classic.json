@@ -1,0 +1,37 @@
+{
+  "level": "classic",
+  "node_count": 4,
+  "edge_counts": {"WALK": 1, "JUMP": 2, "DASH": 1, "DROP": 0, "WALL_JUMP": 0},
+  "discarded_candidates": [
+    {
+      "from": 1,
+      "to": 3,
+      "action": "DASH",
+      "reason": "landing_mismatch",
+      "probe": {
+        "level": "classic",
+        "movement": "dash",
+        "start_position": {"x": 36, "y": 178},
+        "action_started": true,
+        "landed": false,
+        "landing_position": null,
+        "final_position": {"x": 102, "y": 202},
+        "physics_frames_elapsed": 24,
+        "physics_delta": 0.0166667,
+        "reason": "no_landing"
+      }
+    }
+  ],
+  "unreachable_node_ids": [],
+  "graph_path": "graphs/classic.json",
+  "geometry_path": "geometry/classic.json",
+  "route_check": {
+    "passed": true,
+    "start_node": 1,
+    "destination_node": 4,
+    "route_node_ids": [1, 2, 3, 4],
+    "steps": 42,
+    "distance_to_destination": 5.4,
+    "final_position": {"x": 281.0, "y": 109.0}
+  }
+}

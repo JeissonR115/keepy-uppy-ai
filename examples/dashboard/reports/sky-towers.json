@@ -1,0 +1,1 @@
+{"level":"sky-towers","node_count":16,"edge_counts":{"WALK":7,"JUMP":5,"DASH":4,"DROP":2,"WALL_JUMP":0},"discarded_candidates":[],"unreachable_node_ids":[],"route_check":{"passed":true,"steps":53}}

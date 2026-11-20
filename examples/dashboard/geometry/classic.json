@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "level": "classic",
+  "bounds": {"position": {"x": 0, "y": 0}, "size": {"x": 320, "y": 240}},
+  "safe_bounds": {"position": {"x": 8, "y": 8}, "size": {"x": 304, "y": 224}},
+  "spawns": {"player_1": {"x": 36, "y": 178}, "player_2": {"x": 284, "y": 108}},
+  "collisions": [
+    {
+      "source": "floor",
+      "collision_layer": 1,
+      "one_way": false,
+      "shape": {"type": "rectangle", "size": {"x": 320, "y": 16}},
+      "transform": {"origin": {"x": 160, "y": 232}, "x_axis": {"x": 1, "y": 0}, "y_axis": {"x": 0, "y": 1}}
+    },
+    {
+      "source": "middle platform",
+      "collision_layer": 1,
+      "one_way": true,
+      "shape": {"type": "segment", "a": {"x": -44, "y": 0}, "b": {"x": 44, "y": 0}},
+      "transform": {"origin": {"x": 160, "y": 144}, "x_axis": {"x": 1, "y": 0}, "y_axis": {"x": 0, "y": 1}}
+    }
+  ],
+  "platforms": [],
+  "movement_constants": {"GRAVITY": 1100, "JUMP_SPEED": -250, "VAR_JUMP_TIME": 0.2, "MAX_RUN": 130, "DASH_SPEED": 300, "DASH_TIME": 0.2}
+}

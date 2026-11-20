@@ -59,6 +59,8 @@ def generate_graphs(
     levels: Iterable[str],
     *,
     graph_directory: Path,
+    report_directory: Path | None = None,
+    geometry_directory: Path | None = None,
     seed: int,
     route_step_limit: int,
 ) -> list[dict[str, Any]]:
@@ -82,6 +84,8 @@ def generate_graphs(
         raise ValueError("route_step_limit must be a positive integer.")
 
     reports = []
+    report_directory = report_directory or graph_directory.parent / "reports"
+    geometry_directory = geometry_directory or graph_directory.parent / "geometry"
     for level_index, level in enumerate(selected_levels):
         reset_sequence = client.reset(seed + level_index, level)
         reset_result = _command_result(client, reset_sequence)
@@ -92,9 +96,8 @@ def generate_graphs(
             )
 
         geometry_sequence = client.get_level_geometry(level)
-        geometry = LevelGeometry.from_payload(
-            _command_result(client, geometry_sequence)
-        )
+        geometry_payload = _command_result(client, geometry_sequence)
+        geometry = LevelGeometry.from_payload(geometry_payload)
         if geometry.level != level:
             raise CPUBridgeProtocolError(
                 f"Geometry export returned {geometry.level!r}, expected {level!r}."
@@ -132,6 +135,8 @@ def generate_graphs(
 
         graph_path = graph_directory / f"{level}.json"
         _write_json_atomically(graph_path, graph)
+        geometry_path = geometry_directory / f"{level}.json"
+        _write_json_atomically(geometry_path, geometry_payload)
         route_check = _exercise_route(
             client,
             level,
@@ -140,13 +145,14 @@ def generate_graphs(
             observation,
             route_step_limit,
         )
-        reports.append(
-            {
-                **report.report_payload(),
-                "graph_path": str(graph_path),
-                "route_check": route_check,
-            }
-        )
+        report_payload = {
+            **report.report_payload(),
+            "graph_path": str(graph_path),
+            "geometry_path": str(geometry_path),
+            "route_check": route_check,
+        }
+        _write_json_atomically(report_directory / f"{level}.json", report_payload)
+        reports.append(report_payload)
     return reports
 
 
@@ -403,7 +409,7 @@ def _route_node_ids(
     return node_ids
 
 
-def _write_json_atomically(path: Path, payload: dict[str, Any]) -> None:
+def _write_json_atomically(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary_path: Path | None = None
     try:

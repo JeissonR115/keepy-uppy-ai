@@ -1,0 +1,2 @@
+{"episode_event":"point","faults":1,"level":"classic","points":{"player_1":1,"player_2":0},"seed":42,"sets":{"player_1":0,"player_2":0},"steps":184,"terminal_reason":"spikes","terminated":true,"truncated":false}
+{"episode_event":"match","faults":0,"level":"classic","points":{"player_1":0,"player_2":3},"seed":43,"sets":{"player_1":0,"player_2":1},"steps":257,"terminal_reason":"set_complete","terminated":true,"truncated":false}

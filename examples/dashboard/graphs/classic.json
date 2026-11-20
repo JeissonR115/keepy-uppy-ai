@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "level": "classic",
+  "nodes": [
+    {"id": 1, "position": {"x": 36.0, "y": 178.0}},
+    {"id": 2, "position": {"x": 116.0, "y": 128.0}},
+    {"id": 3, "position": {"x": 204.0, "y": 178.0}},
+    {"id": 4, "position": {"x": 284.0, "y": 108.0}}
+  ],
+  "edges": [
+    {"from": 1, "to": 2, "action": "JUMP", "cost": 1.2},
+    {"from": 2, "to": 1, "action": "JUMP", "cost": 1.2},
+    {"from": 2, "to": 3, "action": "WALK", "cost": 1.0, "bidirectional": true},
+    {"from": 3, "to": 4, "action": "DASH", "cost": 0.9}
+  ]
+}

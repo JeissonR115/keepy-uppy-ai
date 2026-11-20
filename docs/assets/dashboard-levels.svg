@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="768" viewBox="0 0 1366 768">
+  <rect width="1366" height="768" fill="#f6f7fb"/>
+  <rect width="250" height="768" fill="#fff"/>
+  <text x="32" y="48" font-family="sans-serif" font-size="24" font-weight="700" fill="#222">Keepy Uppy AI</text>
+  <text x="32" y="82" font-family="sans-serif" font-size="14" fill="#777">Inspector local</text>
+  <text x="32" y="143" font-family="sans-serif" font-size="15" fill="#555">Vista</text>
+  <rect x="20" y="160" width="210" height="42" rx="8" fill="#e7f0ff"/>
+  <text x="38" y="187" font-family="sans-serif" font-size="16" font-weight="600" fill="#2459a6">Niveles</text>
+  <text x="38" y="234" font-family="sans-serif" font-size="16" fill="#555">Métricas</text>
+  <text x="38" y="275" font-family="sans-serif" font-size="16" fill="#555">Episodios</text>
+  <text x="286" y="58" font-family="sans-serif" font-size="30" font-weight="700" fill="#20242b">Niveles</text>
+  <text x="286" y="92" font-family="sans-serif" font-size="15" fill="#606773">Geometría, nodos y transiciones de navegación · classic</text>
+  <rect x="286" y="115" width="165" height="48" rx="8" fill="#fff" stroke="#d7dbe3"/>
+  <text x="302" y="145" font-family="sans-serif" font-size="15" fill="#333">Nivel: classic ▾</text>
+  <rect x="466" y="115" width="300" height="48" rx="8" fill="#fff" stroke="#d7dbe3"/>
+  <text x="482" y="145" font-family="sans-serif" font-size="15" fill="#333">Acciones: WALK · JUMP · DASH ▾</text>
+  <rect x="286" y="183" width="1045" height="515" rx="12" fill="#fff" stroke="#e0e3e9"/>
+  <g stroke="#e8ebf0" stroke-width="1">
+    <path d="M350 220V650M470 220V650M590 220V650M710 220V650M830 220V650M950 220V650M1070 220V650M1190 220V650"/>
+    <path d="M320 260H1295M320 340H1295M320 420H1295M320 500H1295M320 580H1295M320 660H1295"/>
+  </g>
+  <path d="M322 620 L1296 620 L1296 655 L322 655Z" fill="#cdd4e0" stroke="#788399" stroke-width="2"/>
+  <path d="M690 410 L956 410" fill="none" stroke="#a9b3c4" stroke-width="9" stroke-linecap="round"/>
+  <path d="M435 566 L690 410" fill="none" stroke="#70c1b3" stroke-width="4"/>
+  <path d="M690 410 L971 566" fill="none" stroke="#5aa9e6" stroke-width="4"/>
+  <path d="M971 566 L1228 348" fill="none" stroke="#f4a261" stroke-width="4"/>
+  <path d="M435 566 L971 566" fill="none" stroke="#ff334f" stroke-width="3" stroke-dasharray="8 8"/>
+  <g fill="#f6f7fb" stroke="#39465e" stroke-width="3">
+    <circle cx="435" cy="566" r="9"/><circle cx="690" cy="410" r="9"/><circle cx="971" cy="566" r="9"/><circle cx="1228" cy="348" r="9"/>
+  </g>
+  <g font-family="sans-serif" font-size="13" fill="#414b5a">
+    <text x="426" y="548">1</text><text x="681" y="392">2</text><text x="962" y="548">3</text><text x="1219" y="330">4</text>
+  </g>
+  <g font-family="sans-serif" font-size="13" fill="#596273">
+    <text x="335" y="684">X (px)</text><text x="306" y="245">Y</text>
+  </g>
+  <g font-family="sans-serif" font-size="13" fill="#39465e">
+    <circle cx="1030" cy="218" r="5" fill="#5aa9e6"/><text x="1042" y="223">WALK</text>
+    <circle cx="1100" cy="218" r="5" fill="#70c1b3"/><text x="1112" y="223">JUMP</text>
+    <circle cx="1174" cy="218" r="5" fill="#f4a261"/><text x="1186" y="223">DASH</text>
+  </g>
+  <text x="286" y="735" font-family="sans-serif" font-size="14" fill="#727b89">Nodos: 4 · Aristas: 4 · Descartes: 1 · Inalcanzables: 0</text>
+</svg>

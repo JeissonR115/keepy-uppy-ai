@@ -1,0 +1,1 @@
+{"level":"hazard-arena","node_count":11,"edge_counts":{"WALK":4,"JUMP":3,"DASH":2,"DROP":1,"WALL_JUMP":0},"discarded_candidates":[{"from":4,"to":8,"action":"JUMP","reason":"probe_did_not_land","probe":{"final_position":{"x":244,"y":196}}}],"unreachable_node_ids":[11],"route_check":{"passed":false,"steps":240,"reason":"step_limit_exceeded"}}

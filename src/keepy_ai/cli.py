@@ -3,8 +3,11 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from contextlib import nullcontext
+from datetime import datetime
 from pathlib import Path
 from typing import Any, TextIO
+from zoneinfo import ZoneInfo
 
 from keepy_ai.bridge.errors import CPUBridgeError
 from keepy_ai.bridge.models import CPUIntent
@@ -44,6 +47,17 @@ def build_parser() -> argparse.ArgumentParser:
         help="number of sequential episodes to run",
     )
     parser.add_argument("--mode", choices=("cpu-vs-cpu", "cpu-vs-scripted"))
+    parser.add_argument(
+        "--save-episodes",
+        action="store_true",
+        help="append episode summaries to a dated JSONL file",
+    )
+    parser.add_argument(
+        "--episodes-dir",
+        type=Path,
+        default=Path.cwd() / "episodes",
+        help="directory for dated episode JSONL files (default: episodes/)",
+    )
     return parser
 
 
@@ -54,6 +68,7 @@ def run_episode_batch(
     seed: int,
     level: str,
     output: TextIO,
+    episode_output: TextIO | None = None,
 ) -> list[dict[str, Any]]:
     if isinstance(episode_count, bool) or not isinstance(episode_count, int) or episode_count <= 0:
         raise ValueError("episode_count must be a positive integer.")
@@ -65,9 +80,13 @@ def run_episode_batch(
         episode_seed = seed + episode_index
         env.reset(seed=episode_seed, level=level)
         steps = 0
+        fault_count = 0
         while True:
             observation, _reward, terminated, truncated, info = env.step(CPUIntent())
             steps += 1
+            fault_count += sum(
+                event.type == "fault" for event in info.get("events", [])
+            )
             if not terminated and not truncated:
                 continue
             terminal_event = info.get("episode_event")
@@ -81,11 +100,16 @@ def run_episode_batch(
                 "episode_event": (
                     terminal_event.type if terminal_event is not None else None
                 ),
+                "faults": fault_count,
                 "points": observation.score.points,
                 "sets": observation.score.sets,
             }
-            output.write(json.dumps(summary, sort_keys=True) + "\n")
+            line = json.dumps(summary, sort_keys=True) + "\n"
+            output.write(line)
             output.flush()
+            if episode_output is not None:
+                episode_output.write(line)
+                episode_output.flush()
             summaries.append(summary)
             break
     return summaries
@@ -104,13 +128,27 @@ def main(argv: list[str] | None = None) -> int:
     }
     try:
         config = GodotConfig.resolve(cli_values, config_path=args.config)
-        with CPUTrainingEnv(simulation=GodotSimulation(config)) as env:
+        date = datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
+        episode_file = (
+            args.episodes_dir / f"{date}.jsonl" if args.save_episodes else None
+        )
+        if episode_file is not None:
+            episode_file.parent.mkdir(parents=True, exist_ok=True)
+        output_context = (
+            episode_file.open("a", encoding="utf-8")
+            if episode_file is not None
+            else nullcontext(None)
+        )
+        with output_context as episode_output, CPUTrainingEnv(
+            simulation=GodotSimulation(config)
+        ) as env:
             run_episode_batch(
                 env,
                 episode_count=args.episode_count,
                 seed=config.seed,
                 level=config.level,
                 output=sys.stdout,
+                episode_output=episode_output,
             )
     except (CPUBridgeError, GodotLaunchError, ValueError) as error:
         print(f"run-episode: {error}", file=sys.stderr)
@@ -140,6 +178,16 @@ def build_graph_parser() -> argparse.ArgumentParser:
         "--graph-dir",
         type=Path,
         default=Path(__file__).resolve().parents[2] / "graphs",
+    )
+    parser.add_argument(
+        "--report-dir",
+        type=Path,
+        help="directory for complete JSON reports (default: sibling reports/)",
+    )
+    parser.add_argument(
+        "--geometry-dir",
+        type=Path,
+        help="directory for exported geometry JSON (default: sibling geometry/)",
     )
     parser.add_argument(
         "--route-step-limit",
@@ -176,6 +224,8 @@ def graph_main(argv: list[str] | None = None) -> int:
                 simulation.client,
                 levels,
                 graph_directory=args.graph_dir,
+                report_directory=args.report_dir,
+                geometry_directory=args.geometry_dir,
                 seed=config.seed,
                 route_step_limit=args.route_step_limit,
             )

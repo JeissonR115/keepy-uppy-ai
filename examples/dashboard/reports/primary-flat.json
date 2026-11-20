@@ -1,0 +1,1 @@
+{"level":"primary-flat","node_count":7,"edge_counts":{"WALK":3,"JUMP":2,"DASH":1,"DROP":0,"WALL_JUMP":0},"discarded_candidates":[],"unreachable_node_ids":[],"route_check":{"passed":true,"steps":18}}
