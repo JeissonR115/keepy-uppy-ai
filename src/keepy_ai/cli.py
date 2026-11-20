@@ -1,0 +1,191 @@
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+from typing import Any, TextIO
+
+from keepy_ai.bridge.errors import CPUBridgeError
+from keepy_ai.bridge.models import CPUIntent
+from keepy_ai.env.environment import CPUTrainingEnv
+from keepy_ai.godot.launcher import GodotConfig, GodotLaunchError, GodotSimulation
+from keepy_ai.graph.workflow import CURRENT_LEVELS, generate_graphs
+
+
+def _positive_integer(value: str) -> int:
+    try:
+        parsed = int(value)
+    except ValueError as error:
+        raise argparse.ArgumentTypeError("must be an integer") from error
+    if parsed <= 0:
+        raise argparse.ArgumentTypeError("must be positive")
+    return parsed
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="run-episode",
+        description="Run seeded Keepy Uppy episodes through the Godot bridge.",
+    )
+    parser.add_argument("--godot-bin")
+    parser.add_argument("--project-path", type=Path)
+    parser.add_argument("--config", type=Path, default=Path.cwd() / "keepy-ai.toml")
+    parser.add_argument("--port", type=int)
+    parser.add_argument("--level")
+    parser.add_argument("--speed", type=float)
+    parser.add_argument("--seed", type=int)
+    parser.add_argument(
+        "--episode-count",
+        "--episodes",
+        dest="episode_count",
+        type=_positive_integer,
+        default=1,
+        help="number of sequential episodes to run",
+    )
+    parser.add_argument("--mode", choices=("cpu-vs-cpu", "cpu-vs-scripted"))
+    return parser
+
+
+def run_episode_batch(
+    env: CPUTrainingEnv,
+    *,
+    episode_count: int,
+    seed: int,
+    level: str,
+    output: TextIO,
+) -> list[dict[str, Any]]:
+    if isinstance(episode_count, bool) or not isinstance(episode_count, int) or episode_count <= 0:
+        raise ValueError("episode_count must be a positive integer.")
+    if isinstance(seed, bool) or not isinstance(seed, int):
+        raise ValueError("seed must be an integer.")
+
+    summaries: list[dict[str, Any]] = []
+    for episode_index in range(episode_count):
+        episode_seed = seed + episode_index
+        env.reset(seed=episode_seed, level=level)
+        steps = 0
+        while True:
+            observation, _reward, terminated, truncated, info = env.step(CPUIntent())
+            steps += 1
+            if not terminated and not truncated:
+                continue
+            terminal_event = info.get("episode_event")
+            summary = {
+                "seed": episode_seed,
+                "level": level,
+                "steps": steps,
+                "terminated": terminated,
+                "truncated": truncated,
+                "terminal_reason": info.get("reason"),
+                "episode_event": (
+                    terminal_event.type if terminal_event is not None else None
+                ),
+                "points": observation.score.points,
+                "sets": observation.score.sets,
+            }
+            output.write(json.dumps(summary, sort_keys=True) + "\n")
+            output.flush()
+            summaries.append(summary)
+            break
+    return summaries
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+    cli_values = {
+        "godot_bin": args.godot_bin,
+        "project_path": args.project_path,
+        "port": args.port,
+        "level": args.level,
+        "speed": args.speed,
+        "seed": args.seed,
+        "mode": args.mode,
+    }
+    try:
+        config = GodotConfig.resolve(cli_values, config_path=args.config)
+        with CPUTrainingEnv(simulation=GodotSimulation(config)) as env:
+            run_episode_batch(
+                env,
+                episode_count=args.episode_count,
+                seed=config.seed,
+                level=config.level,
+                output=sys.stdout,
+            )
+    except (CPUBridgeError, GodotLaunchError, ValueError) as error:
+        print(f"run-episode: {error}", file=sys.stderr)
+        return 1
+    return 0
+
+
+def build_graph_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="generate-graph",
+        description="Generate, load, and physically exercise navigation graphs.",
+    )
+    parser.add_argument("--godot-bin")
+    parser.add_argument("--project-path", type=Path)
+    parser.add_argument("--config", type=Path, default=Path.cwd() / "keepy-ai.toml")
+    parser.add_argument("--port", type=int)
+    level_group = parser.add_mutually_exclusive_group()
+    level_group.add_argument("--level")
+    level_group.add_argument(
+        "--all-levels",
+        action="store_true",
+        help="generate graphs for all four current levels",
+    )
+    parser.add_argument("--speed", type=float)
+    parser.add_argument("--seed", type=int)
+    parser.add_argument(
+        "--graph-dir",
+        type=Path,
+        default=Path(__file__).resolve().parents[2] / "graphs",
+    )
+    parser.add_argument(
+        "--route-step-limit",
+        type=_positive_integer,
+        default=1800,
+        help="maximum physics steps allowed for each route check",
+    )
+    parser.add_argument("--mode", choices=("cpu-vs-cpu", "cpu-vs-scripted"))
+    return parser
+
+
+def graph_main(argv: list[str] | None = None) -> int:
+    args = build_graph_parser().parse_args(argv)
+    cli_values = {
+        "godot_bin": args.godot_bin,
+        "project_path": args.project_path,
+        "port": args.port,
+        "level": args.level,
+        "speed": args.speed,
+        "seed": args.seed,
+        "mode": args.mode,
+    }
+    try:
+        config = GodotConfig.resolve(cli_values, config_path=args.config)
+        levels = (
+            CURRENT_LEVELS
+            if args.all_levels
+            else (args.level or config.level,)
+        )
+        with GodotSimulation(config) as simulation:
+            if simulation.client is None:
+                raise GodotLaunchError("Godot started without a bridge client.")
+            reports = generate_graphs(
+                simulation.client,
+                levels,
+                graph_directory=args.graph_dir,
+                seed=config.seed,
+                route_step_limit=args.route_step_limit,
+            )
+        for report in reports:
+            print(json.dumps(report, sort_keys=True))
+        return 0 if all(report["route_check"]["passed"] for report in reports) else 1
+    except (CPUBridgeError, GodotLaunchError, OSError, ValueError) as error:
+        print(f"generate-graph: {error}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

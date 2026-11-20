@@ -1,0 +1,23 @@
+[project]
+name = "keepy-ai"
+version = "0.1.0"
+description = "Python tooling for the Keepy Uppy Godot simulation bridge"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+run-episode = "keepy_ai.cli:main"
+generate-graph = "keepy_ai.cli:graph_main"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+markers = [
+    "godot_integration: requires GODOT_BIN and GODOT_PROJECT_PATH for a real simulation",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
