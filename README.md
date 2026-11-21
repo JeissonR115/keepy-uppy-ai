@@ -90,11 +90,12 @@ step, event, and one-tick action-latency semantics.
 `run-live` is the Python client for an interactive match bridge. It requests
 geometry for the selected level and answers sequenced observations, but it does
 not start Godot or create the match bridge. The paired Godot launcher/bridge
-integration is not implemented yet, so the normal one-player-versus-bot match
-cannot start or use this client yet.
+integration starts it from the normal `1 PLAYER | VS BOT` flow after arena
+selection. Godot waits for the client and active-level geometry before enabling
+the remote brain; startup failures keep the match on `LocalBrain` and report
+the fallback reason.
 
-After that Godot integration is implemented, its launcher should start the
-client with separate arguments similar to:
+When launched by Godot, the client arguments are similar to:
 
 ```sh
 uv run --project /path/to/keepy-uppy-ai run-live \

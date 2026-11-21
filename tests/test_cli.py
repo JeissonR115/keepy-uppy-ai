@@ -6,6 +6,7 @@ from typing import Any
 
 import pytest
 
+import keepy_ai.cli as cli
 from keepy_ai.cli import build_parser, main, run_episode_batch
 from keepy_ai.bridge.models import (
     CPUIntent,
@@ -16,6 +17,7 @@ from keepy_ai.bridge.models import (
     ObservationMessage,
 )
 from keepy_ai.env.environment import CPUTrainingEnv
+from keepy_ai.graph.navigation import NavigationGraph
 
 
 def _observation_payload() -> dict[str, Any]:
@@ -230,6 +232,39 @@ def test_episode_batch_logs_each_policy_decision_as_jsonl() -> None:
     assert record["action"]["horizontal"] != 0
 
 
+def test_episode_batch_passes_navigation_graph_to_policy(monkeypatch) -> None:
+    bridge = _FakeBridge()
+    graph = NavigationGraph.from_payload(
+        {
+            "schema_version": 1,
+            "level": "classic",
+            "nodes": [{"id": 1, "position": {"x": 20, "y": 30}}],
+            "edges": [],
+        }
+    )
+    received_graphs = []
+    actual_decide = cli.decide
+
+    def decide_with_graph(observation, geometry, config, graph=None, graph_error=None):
+        received_graphs.append(graph)
+        return actual_decide(
+            observation, geometry, config, graph=graph, graph_error=graph_error
+        )
+
+    monkeypatch.setattr(cli, "decide", decide_with_graph)
+    with CPUTrainingEnv(bridge, owns_client=True) as env:
+        run_episode_batch(
+            env,
+            episode_count=1,
+            seed=7,
+            level="classic",
+            output=io.StringIO(),
+            graph=graph,
+        )
+
+    assert received_graphs == [graph]
+
+
 def test_episode_batch_appends_jsonl_and_counts_faults() -> None:
     bridge = _FakeBridge(faults_per_episode=2)
     stdout = io.StringIO()
@@ -279,6 +314,7 @@ def test_run_episode_help_lists_documented_options(capsys: pytest.CaptureFixture
         "--policy-preferred-distance",
         "--policy-safety-margin",
         "--policy-opponent-push-slowdown",
+        "--graph-dir",
     ):
         assert option in help_text
 

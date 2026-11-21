@@ -1,5 +1,5 @@
 from keepy_ai.bridge.models import CPUIntent, CPUObservation
-from keepy_ai.graph.geometry import LevelGeometry
+from keepy_ai.graph.geometry import LevelGeometry, Point
 from keepy_ai.graph.navigation import NavigationGraph
 from keepy_ai.policy.brain import decide
 from keepy_ai.policy.config import PolicyConfig
@@ -67,6 +67,8 @@ def _observation(
     opponent_y: float = 150,
     opponent_vx: float = 0,
     opponent_vy: float = 0,
+    bot_on_floor: bool = True,
+    waiting_for_first_touch: bool = False,
 ) -> CPUObservation:
     player = {
         "position": {"x": opponent_x, "y": opponent_y},
@@ -77,7 +79,11 @@ def _observation(
         "dash_available": True,
         "stamina": 110.0,
     }
-    bot = {**player, "position": {"x": bot_x, "y": bot_y}}
+    bot = {
+        **player,
+        "position": {"x": bot_x, "y": bot_y},
+        "on_floor": bot_on_floor,
+    }
     return CPUObservation.from_payload(
         {
             "tick": 1,
@@ -86,7 +92,7 @@ def _observation(
             "balloon": {
                 "position": {"x": balloon_x, "y": balloon_y},
                 "velocity": {"x": balloon_vx, "y": 0.0},
-                "waiting_for_first_touch": False,
+                "waiting_for_first_touch": waiting_for_first_touch,
             },
             "current_turn": turn,
             "score": {"points": {"player_1": 0, "player_2": 0}, "sets": {"player_1": 0, "player_2": 0}},
@@ -148,6 +154,22 @@ def _opponent_obstacle_graph(detour_cost: float = 1.2) -> NavigationGraph:
     )
 
 
+def _opening_touch_graph() -> NavigationGraph:
+    return NavigationGraph.from_payload(
+        {
+            "schema_version": 1,
+            "level": "classic",
+            "nodes": [
+                {"id": 1, "position": {"x": 248, "y": 144}},
+                {"id": 2, "position": {"x": 240, "y": 104}},
+            ],
+            "edges": [
+                {"from": 1, "to": 2, "action": "DASH", "cost": 0.9},
+            ],
+        }
+    )
+
+
 def test_own_turn_targets_earliest_reachable_path_sample() -> None:
     decision = decide(
         _observation(bot_x=50, bot_y=40, balloon_x=70, balloon_y=30, balloon_vx=20),
@@ -160,6 +182,53 @@ def test_own_turn_targets_earliest_reachable_path_sample() -> None:
     assert decision.target is not None
     assert decision.target.x == pytest.approx(70.3333333333)
     assert decision.predicted_time > 0
+
+
+@pytest.mark.parametrize(
+    ("bot_on_floor", "expected_jump"),
+    [(True, True), (False, False)],
+)
+def test_waiting_for_first_touch_jumps_toward_balloon_above_player(
+    bot_on_floor: bool, expected_jump: bool
+) -> None:
+    decision = decide(
+        _observation(
+            bot_x=50,
+            bot_y=150,
+            balloon_x=70,
+            balloon_y=114,
+            waiting_for_first_touch=True,
+            bot_on_floor=bot_on_floor,
+        ),
+        _geometry(),
+        _config(),
+    )
+
+    assert decision.prediction_status == "waiting_for_first_touch"
+    assert decision.action.horizontal == 1
+    assert decision.action.jump is expected_jump
+
+
+def test_waiting_for_first_touch_uses_graph_dash_to_reach_balloon() -> None:
+    decision = decide(
+        _observation(
+            bot_x=248,
+            bot_y=144,
+            balloon_x=248,
+            balloon_y=114,
+            waiting_for_first_touch=True,
+        ),
+        _geometry(),
+        _config(),
+        graph=_opening_touch_graph(),
+    )
+
+    assert decision.route_status == "graph_route"
+    assert decision.route_node_ids == (1, 2)
+    assert decision.route_waypoint == Point(240, 104)
+    assert decision.action.dash
+    assert decision.action.dash_direction.x < 0
+    assert decision.action.dash_direction.y < 0
 
 
 def test_policy_uses_reachable_graph_route_to_intercept() -> None:

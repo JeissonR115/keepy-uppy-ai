@@ -26,4 +26,4 @@
 ## 5. Paired game integration
 
 - [x] 5.1 Coordinate the live command arguments and geometry request with `integrate-python-policy-into-game`; verify the two changes agree on loopback address, port, client readiness, and active-level geometry.
-- [ ] 5.2 Run the live client against an interactive Godot match and verify the Python policy returns actions, responds to turn changes, and leaves headless `run-episode` behavior unchanged.
+- [x] 5.2 Run the live client against an interactive Godot match and verify the Python policy returns actions, responds to turn changes, and leaves headless `run-episode` behavior unchanged.

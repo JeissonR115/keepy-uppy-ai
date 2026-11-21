@@ -13,6 +13,11 @@ from keepy_ai.bridge.errors import CPUBridgeError
 from keepy_ai.bridge.models import CPUIntent
 from keepy_ai.env.environment import CPUTrainingEnv
 from keepy_ai.godot.launcher import GodotConfig, GodotLaunchError, GodotSimulation
+from keepy_ai.graph.navigation import (
+    NavigationGraph,
+    NavigationGraphError,
+    load_navigation_graph,
+)
 from keepy_ai.graph.workflow import CURRENT_LEVELS, generate_graphs
 from keepy_ai.policy.brain import decide
 from keepy_ai.policy.config import PolicyConfig, load_policy_config
@@ -37,6 +42,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--project-path", type=Path)
     parser.add_argument("--config", type=Path, default=Path.cwd() / "keepy-ai.toml")
     parser.add_argument("--port", type=int)
+    parser.add_argument(
+        "--graph-dir",
+        type=Path,
+        default=Path(__file__).resolve().parents[2] / "graphs",
+        help="directory containing navigation graphs (default: graphs/)",
+    )
     parser.add_argument("--level")
     parser.add_argument("--speed", type=float)
     parser.add_argument("--seed", type=int)
@@ -88,6 +99,8 @@ def run_episode_batch(
     policy_mode: str = "adaptive",
     policy_config: PolicyConfig | None = None,
     policy_output: TextIO | None = None,
+    graph: NavigationGraph | None = None,
+    graph_error: str | None = None,
 ) -> list[dict[str, Any]]:
     if isinstance(episode_count, bool) or not isinstance(episode_count, int) or episode_count <= 0:
         raise ValueError("episode_count must be a positive integer.")
@@ -113,7 +126,13 @@ def run_episode_batch(
                     raise RuntimeError("Adaptive policy requires level geometry.")
 
                 def select_action(current_observation):
-                    decision = decide(current_observation, geometry, selected_policy_config)
+                    decision = decide(
+                        current_observation,
+                        geometry,
+                        selected_policy_config,
+                        graph=graph,
+                        graph_error=graph_error,
+                    )
                     record = {
                         "episode": episode_index,
                         "seed": episode_seed,
@@ -185,6 +204,19 @@ def main(argv: list[str] | None = None) -> int:
                 "opponent_push_slowdown": args.policy_opponent_push_slowdown,
             },
         )
+        graph = None
+        graph_error = None
+        if args.policy == "adaptive":
+            try:
+                graph = load_navigation_graph(
+                    args.graph_dir / f"{config.level}.json", config.level
+                )
+            except NavigationGraphError as error:
+                graph_error = str(error)
+                print(
+                    f"run-episode: {error}; using direct movement.",
+                    file=sys.stderr,
+                )
         date = datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
         episode_file = (
             args.episodes_dir / f"{date}.jsonl" if args.save_episodes else None
@@ -216,6 +248,8 @@ def main(argv: list[str] | None = None) -> int:
                 policy_mode=args.policy,
                 policy_config=policy_config,
                 policy_output=policy_output,
+                graph=graph,
+                graph_error=graph_error,
             )
     except (CPUBridgeError, GodotLaunchError, ValueError) as error:
         print(f"run-episode: {error}", file=sys.stderr)

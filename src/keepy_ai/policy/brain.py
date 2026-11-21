@@ -133,11 +133,38 @@ def _decide_own_turn(
 ) -> PolicyDecision:
     if observation.balloon.waiting_for_first_touch:
         target = Point(observation.balloon.position.x, observation.balloon.position.y)
-        action = CPUIntent(horizontal=_horizontal(target.x - player.position.x))
+        route = (
+            find_route(
+                graph,
+                player.position,
+                target,
+                edge_penalties=route_penalties,
+            )
+            if graph is not None
+            else None
+        )
+        route_status, route_reason = _route_status(graph, route, graph_error)
+        movement_target = route.waypoint if route is not None else target
+        if route is not None and route.first_traversal is not None:
+            action = _action_toward(
+                player, movement_target, route.first_traversal.action
+            )
+        else:
+            action = CPUIntent(
+                horizontal=_horizontal(movement_target.x - player.position.x),
+                jump=(
+                    player.on_floor
+                    and movement_target.y < player.position.y - 10
+                ),
+            )
         return PolicyDecision(
             action, "own_turn", "waiting_for_first_touch", target, 0.0, distance,
             config.minimum_safe_distance, distance >= config.minimum_safe_distance,
-            configuration=asdict(config),
+            route_reason,
+            asdict(config),
+            route_status=route_status,
+            route_node_ids=route.node_ids if route is not None else (),
+            route_waypoint=route.waypoint if route is not None else None,
         )
     candidates = _reachable_intercepts(player, geometry, config, path)
     target_sample = candidates[0] if candidates else None
