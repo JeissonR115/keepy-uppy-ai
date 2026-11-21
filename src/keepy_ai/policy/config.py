@@ -4,7 +4,9 @@ import math
 import tomllib
 from dataclasses import dataclass, fields
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
+
+DEFAULT_PREFERRED_DISTANCE = 48.0
 
 
 @dataclass(frozen=True, slots=True)
@@ -23,7 +25,8 @@ class PolicyConfig:
     player_contact_radius: float = 16.0
     player_collision_radius: float = 3.0
     safety_margin: float = 8.0
-    preferred_distance: float = 48.0
+    preferred_distance: float | None = None
+    opponent_push_slowdown: float = 2.5
     prediction_horizon: float = 3.0
     max_prediction_steps: int = 360
     player_horizontal_speed: float = 130.0
@@ -58,12 +61,24 @@ class PolicyConfig:
                 raise ValueError(f"policy.{name} must be finite and non-negative.")
         if not _finite_number(self.rebound_strength) or not 0 <= self.rebound_strength <= 1:
             raise ValueError("policy.rebound_strength must be between 0 and 1.")
-        if not _finite_number(self.preferred_distance):
+        if self.preferred_distance is not None and not _finite_number(
+            self.preferred_distance
+        ):
             raise ValueError("policy.preferred_distance must be finite.")
-        if self.preferred_distance < self.minimum_safe_distance:
+        if (
+            self.preferred_distance is not None
+            and self.preferred_distance < self.minimum_safe_distance
+        ):
             raise ValueError(
                 "policy.preferred_distance must be at least the minimum safe distance "
                 f"({self.minimum_safe_distance:.2f})."
+            )
+        if (
+            not _finite_number(self.opponent_push_slowdown)
+            or self.opponent_push_slowdown < 1
+        ):
+            raise ValueError(
+                "policy.opponent_push_slowdown must be finite and at least 1."
             )
         if (
             isinstance(self.max_prediction_steps, bool)
@@ -75,6 +90,24 @@ class PolicyConfig:
     @property
     def minimum_safe_distance(self) -> float:
         return self.player_contact_radius + self.player_collision_radius + self.safety_margin
+
+    def resolve_preferred_distance(
+        self, movement_constants: Mapping[str, float]
+    ) -> tuple[float, str]:
+        if self.preferred_distance is not None:
+            return self.preferred_distance, "override"
+
+        dash_speed = movement_constants.get("DASH_SPEED")
+        dash_time = movement_constants.get("DASH_TIME")
+        if (
+            _finite_number(dash_speed)
+            and _finite_number(dash_time)
+            and dash_speed > 0
+            and dash_time > 0
+        ):
+            return max(dash_speed * dash_time, self.minimum_safe_distance), "dash_range"
+
+        return max(DEFAULT_PREFERRED_DISTANCE, self.minimum_safe_distance), "fallback"
 
     @classmethod
     def from_mapping(cls, values: dict[str, Any]) -> PolicyConfig:

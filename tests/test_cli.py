@@ -53,7 +53,19 @@ def _geometry_payload() -> dict[str, Any]:
         "bounds": {"position": {"x": 0, "y": 0}, "size": {"x": 320, "y": 180}},
         "safe_bounds": {"position": {"x": 8, "y": 8}, "size": {"x": 304, "y": 164}},
         "spawns": {"player_1": {"x": 72, "y": 144}, "player_2": {"x": 248, "y": 144}},
-        "collisions": [],
+        "collisions": [
+            {
+                "source": "fixture-floor",
+                "collision_layer": 1,
+                "one_way": False,
+                "shape": {"type": "rectangle", "size": {"x": 320, "y": 10}},
+                "transform": {
+                    "origin": {"x": 160, "y": 175},
+                    "x_axis": {"x": 1, "y": 0},
+                    "y_axis": {"x": 0, "y": 1},
+                },
+            }
+        ],
         "platforms": [],
         "movement_constants": {"MAX_RUN": 130, "GRAVITY": 1100, "JUMP_SPEED": -250},
     }
@@ -266,6 +278,7 @@ def test_run_episode_help_lists_documented_options(capsys: pytest.CaptureFixture
         "--policy-log",
         "--policy-preferred-distance",
         "--policy-safety-margin",
+        "--policy-opponent-push-slowdown",
     ):
         assert option in help_text
 

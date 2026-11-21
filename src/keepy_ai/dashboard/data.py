@@ -1,12 +1,12 @@
 from __future__ import annotations
 
 import json
-import math
 from pathlib import Path
 from typing import Any
 
 from keepy_ai.bridge.errors import CPUBridgeProtocolError
 from keepy_ai.graph.geometry import LevelGeometry
+from keepy_ai.graph.navigation import NavigationGraph, NavigationGraphError
 
 ARTIFACT_DIRECTORIES = {
     "graph": "graphs",
@@ -54,37 +54,10 @@ def discover_episodes(root: Path) -> dict[str, Path]:
 
 def load_graph(path: Path) -> dict[str, Any]:
     payload = _load_json(path)
-    if _integer(payload.get("schema_version"), "schema_version", path) != 1:
-        raise DashboardDataError(f"{path}: unsupported graph schema_version.")
-    _string(payload.get("level"), "level", path)
-    nodes = payload.get("nodes")
-    edges = payload.get("edges")
-    if not isinstance(nodes, list) or not isinstance(edges, list):
-        raise DashboardDataError(f"{path}: graph nodes and edges must be arrays.")
-    node_ids: set[int] = set()
-    for index, node in enumerate(nodes):
-        name = f"nodes[{index}]"
-        if not isinstance(node, dict):
-            raise DashboardDataError(f"{path}: {name} must be an object.")
-        node_id = _integer(node.get("id"), f"{name}.id", path)
-        if node_id in node_ids:
-            raise DashboardDataError(f"{path}: duplicate node id {node_id}.")
-        node_ids.add(node_id)
-        _point(node.get("position"), f"{name}.position", path)
-    for index, edge in enumerate(edges):
-        name = f"edges[{index}]"
-        if not isinstance(edge, dict):
-            raise DashboardDataError(f"{path}: {name} must be an object.")
-        source = _integer(edge.get("from"), f"{name}.from", path)
-        target = _integer(edge.get("to"), f"{name}.to", path)
-        if source not in node_ids or target not in node_ids:
-            raise DashboardDataError(f"{path}: {name} references an unknown node.")
-        _string(edge.get("action"), f"{name}.action", path)
-        cost = _number(edge.get("cost"), f"{name}.cost", path)
-        if cost <= 0:
-            raise DashboardDataError(f"{path}: {name}.cost must be positive.")
-        if not isinstance(edge.get("bidirectional", False), bool):
-            raise DashboardDataError(f"{path}: {name}.bidirectional must be boolean.")
+    try:
+        NavigationGraph.from_payload(payload)
+    except NavigationGraphError as error:
+        raise DashboardDataError(f"{path}: {error}") from error
     return payload
 
 
@@ -252,19 +225,6 @@ def _validate_episode(value: Any, path: Path, line_number: int) -> None:
     for field in ("points", "sets"):
         if not isinstance(value[field], dict):
             raise DashboardDataError(f"{prefix}: {field} must be an object.")
-
-
-def _point(value: Any, name: str, path: Path) -> None:
-    if not isinstance(value, dict):
-        raise DashboardDataError(f"{path}: {name} must be an object.")
-    _number(value.get("x"), f"{name}.x", path)
-    _number(value.get("y"), f"{name}.y", path)
-
-
-def _number(value: Any, name: str, path: Path) -> float:
-    if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
-        raise DashboardDataError(f"{path}: {name} must be a finite number.")
-    return float(value)
 
 
 def _integer(

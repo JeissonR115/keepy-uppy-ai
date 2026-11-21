@@ -85,6 +85,40 @@ GODOT_BIN=/path/to/godot GODOT_PROJECT_PATH=../keepy-uppy \
 See [the training environment guide](docs/training-environment.md) for reset,
 step, event, and one-tick action-latency semantics.
 
+## Live Godot match
+
+`run-live` is the Python client for an interactive match bridge. It requests
+geometry for the selected level and answers sequenced observations, but it does
+not start Godot or create the match bridge. The paired Godot launcher/bridge
+integration is not implemented yet, so the normal one-player-versus-bot match
+cannot start or use this client yet.
+
+After that Godot integration is implemented, its launcher should start the
+client with separate arguments similar to:
+
+```sh
+uv run --project /path/to/keepy-uppy-ai run-live \
+  --host 127.0.0.1 --port 8765 --timeout 10 --level classic
+```
+
+Do not run this command by itself unless a Godot live bridge is already
+listening on that address and port. To exercise the Python policy now, use
+`run-episode`; it launches a headless Godot simulation and is not an
+interactive match:
+
+```sh
+uv run run-episode --level classic --seed 42 --episode-count 1
+```
+
+`--host`, `--port`, and `--timeout` default to `127.0.0.1`, `8765`, and
+10 seconds; `--level` is required. `--config` selects a policy TOML file, and
+`--graph-dir` selects the navigation graph directory (default: `graphs/`).
+`--policy-preferred-distance` and `--policy-safety-margin` override the
+corresponding policy settings, and `--policy-opponent-push-slowdown` controls
+the route cost of pushing through an opponent. In contrast, `run-episode`
+launches and owns a headless Godot simulation and retains its reset/step
+workflow.
+
 Run seeded episodes with the neutral-intent baseline (no trained policy):
 
 ```sh

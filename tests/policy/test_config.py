@@ -8,7 +8,16 @@ from keepy_ai.policy.config import PolicyConfig, load_policy_config
 def test_default_contact_band_has_separation_and_reachability() -> None:
     config = PolicyConfig()
     assert config.minimum_safe_distance == 27.0
-    assert config.preferred_distance > config.minimum_safe_distance
+    assert config.preferred_distance is None
+    assert config.resolve_preferred_distance(
+        {"DASH_SPEED": 300.0, "DASH_TIME": 0.2}
+    ) == (60.0, "dash_range")
+
+
+def test_missing_dash_constants_use_safe_documented_fallback() -> None:
+    config = PolicyConfig()
+
+    assert config.resolve_preferred_distance({}) == (48.0, "fallback")
 
 
 @pytest.mark.parametrize(
@@ -19,6 +28,8 @@ def test_default_contact_band_has_separation_and_reachability() -> None:
         ({"physics_hz": 0}, "finite and positive"),
         ({"gravity": math.inf}, "finite and non-negative"),
         ({"preferred_distance": 20.0}, "minimum safe distance"),
+        ({"opponent_push_slowdown": 0.9}, "at least 1"),
+        ({"opponent_push_slowdown": math.inf}, "at least 1"),
         ({"max_prediction_steps": True}, "positive integer"),
     ],
 )
@@ -34,10 +45,20 @@ def test_loads_toml_then_cli_overrides(tmp_path) -> None:
         encoding="utf-8",
     )
 
+    toml_config = load_policy_config(config_file)
     config = load_policy_config(config_file, {"preferred_distance": 60.0})
 
+    assert toml_config.preferred_distance == 52.0
     assert config.preferred_distance == 60.0
     assert config.rebound_strength == 0.4
+
+
+def test_configured_preferred_distance_overrides_dash_range() -> None:
+    config = PolicyConfig(preferred_distance=72.0)
+
+    assert config.resolve_preferred_distance(
+        {"DASH_SPEED": 300.0, "DASH_TIME": 0.2}
+    ) == (72.0, "override")
 
 
 def test_rejects_unknown_setting(tmp_path) -> None:

@@ -8,6 +8,7 @@ dependencies = []
 
 [project.scripts]
 run-episode = "keepy_ai.cli:main"
+run-live = "keepy_ai.live:main"
 generate-graph = "keepy_ai.cli:graph_main"
 keepy-dashboard = "keepy_ai.dashboard.launcher:main"
 

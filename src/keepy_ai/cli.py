@@ -62,6 +62,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--policy-safety-margin", type=float)
     parser.add_argument("--policy-preferred-distance", type=float)
+    parser.add_argument("--policy-opponent-push-slowdown", type=float)
     parser.add_argument(
         "--save-episodes",
         action="store_true",
@@ -181,6 +182,7 @@ def main(argv: list[str] | None = None) -> int:
             {
                 "safety_margin": args.policy_safety_margin,
                 "preferred_distance": args.policy_preferred_distance,
+                "opponent_push_slowdown": args.policy_opponent_push_slowdown,
             },
         )
         date = datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
