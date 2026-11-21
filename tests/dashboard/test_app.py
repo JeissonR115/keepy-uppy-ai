@@ -96,4 +96,5 @@ def test_dashboard_pages_render_sample_artifacts(
         app.sidebar.radio[0].set_value(page)
         app.run()
         assert not app.exception
+    assert app.session_state["live_client"] is None
 

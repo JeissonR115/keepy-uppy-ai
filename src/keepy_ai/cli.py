@@ -14,6 +14,8 @@ from keepy_ai.bridge.models import CPUIntent
 from keepy_ai.env.environment import CPUTrainingEnv
 from keepy_ai.godot.launcher import GodotConfig, GodotLaunchError, GodotSimulation
 from keepy_ai.graph.workflow import CURRENT_LEVELS, generate_graphs
+from keepy_ai.policy.brain import decide
+from keepy_ai.policy.config import PolicyConfig, load_policy_config
 
 
 def _positive_integer(value: str) -> int:
@@ -48,6 +50,19 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--mode", choices=("cpu-vs-cpu", "cpu-vs-scripted"))
     parser.add_argument(
+        "--policy",
+        choices=("adaptive", "neutral"),
+        default="adaptive",
+        help="action policy (default: adaptive; neutral is a fixed-action baseline)",
+    )
+    parser.add_argument(
+        "--policy-log",
+        type=Path,
+        help="optional JSONL file for per-observation policy decisions",
+    )
+    parser.add_argument("--policy-safety-margin", type=float)
+    parser.add_argument("--policy-preferred-distance", type=float)
+    parser.add_argument(
         "--save-episodes",
         action="store_true",
         help="append episode summaries to a dated JSONL file",
@@ -69,20 +84,53 @@ def run_episode_batch(
     level: str,
     output: TextIO,
     episode_output: TextIO | None = None,
+    policy_mode: str = "adaptive",
+    policy_config: PolicyConfig | None = None,
+    policy_output: TextIO | None = None,
 ) -> list[dict[str, Any]]:
     if isinstance(episode_count, bool) or not isinstance(episode_count, int) or episode_count <= 0:
         raise ValueError("episode_count must be a positive integer.")
     if isinstance(seed, bool) or not isinstance(seed, int):
         raise ValueError("seed must be an integer.")
+    if policy_mode not in {"adaptive", "neutral"}:
+        raise ValueError("policy_mode must be 'adaptive' or 'neutral'.")
+    selected_policy_config = policy_config or PolicyConfig()
 
     summaries: list[dict[str, Any]] = []
+    geometry = None
     for episode_index in range(episode_count):
         episode_seed = seed + episode_index
         env.reset(seed=episode_seed, level=level)
+        if policy_mode == "adaptive" and geometry is None:
+            geometry = env.get_level_geometry(level)
         steps = 0
         fault_count = 0
         while True:
-            observation, _reward, terminated, truncated, info = env.step(CPUIntent())
+            decision_log: list[dict[str, Any]] = []
+            if policy_mode == "adaptive":
+                if geometry is None:
+                    raise RuntimeError("Adaptive policy requires level geometry.")
+
+                def select_action(current_observation):
+                    decision = decide(current_observation, geometry, selected_policy_config)
+                    record = {
+                        "episode": episode_index,
+                        "seed": episode_seed,
+                        "level": level,
+                        "tick": current_observation.tick,
+                        **decision.to_payload(),
+                    }
+                    decision_log.append(record)
+                    return decision.action, record
+
+                result = env.step(action_selector=select_action)
+            else:
+                result = env.step(CPUIntent())
+            observation, _reward, terminated, truncated, info = result
+            if policy_output is not None:
+                for record in decision_log:
+                    policy_output.write(json.dumps(record, sort_keys=True) + "\n")
+                    policy_output.flush()
             steps += 1
             fault_count += sum(
                 event.type == "fault" for event in info.get("events", [])
@@ -128,6 +176,13 @@ def main(argv: list[str] | None = None) -> int:
     }
     try:
         config = GodotConfig.resolve(cli_values, config_path=args.config)
+        policy_config = load_policy_config(
+            args.config,
+            {
+                "safety_margin": args.policy_safety_margin,
+                "preferred_distance": args.policy_preferred_distance,
+            },
+        )
         date = datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
         episode_file = (
             args.episodes_dir / f"{date}.jsonl" if args.save_episodes else None
@@ -139,7 +194,14 @@ def main(argv: list[str] | None = None) -> int:
             if episode_file is not None
             else nullcontext(None)
         )
-        with output_context as episode_output, CPUTrainingEnv(
+        if args.policy_log is not None:
+            args.policy_log.parent.mkdir(parents=True, exist_ok=True)
+        policy_output_context = (
+            args.policy_log.open("a", encoding="utf-8")
+            if args.policy_log is not None
+            else nullcontext(None)
+        )
+        with output_context as episode_output, policy_output_context as policy_output, CPUTrainingEnv(
             simulation=GodotSimulation(config)
         ) as env:
             run_episode_batch(
@@ -149,6 +211,9 @@ def main(argv: list[str] | None = None) -> int:
                 level=config.level,
                 output=sys.stdout,
                 episode_output=episode_output,
+                policy_mode=args.policy,
+                policy_config=policy_config,
+                policy_output=policy_output,
             )
     except (CPUBridgeError, GodotLaunchError, ValueError) as error:
         print(f"run-episode: {error}", file=sys.stderr)

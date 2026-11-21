@@ -259,6 +259,48 @@ def test_invalid_action_is_rejected_before_advancing_bridge() -> None:
     assert client.sent_actions == []
 
 
+def test_action_selector_uses_observation_and_returns_decision_info() -> None:
+    client = _FakeClient([_scenario(31, tick=4)])
+    env = CPUTrainingEnv(client)
+    env.reset(seed=3, level="classic")
+    seen: list[CPUObservation] = []
+
+    def select(observation: CPUObservation):
+        seen.append(observation)
+        return (
+            {
+                "horizontal": 1,
+                "jump": False,
+                "dash": False,
+                "dash_direction": {"x": 0, "y": 0},
+                "down": False,
+                "grab": False,
+            },
+            {"phase": "opponent_turn", "target": {"x": 80, "y": 30}},
+        )
+
+    _, _, _, _, info = env.step(action_selector=select)
+
+    assert seen[0].tick == 4
+    assert client.sent_actions[0][0] == 31
+    assert client.sent_actions[0][1].horizontal == 1
+    assert info["policy_decision"]["phase"] == "opponent_turn"
+
+
+def test_action_selector_requires_one_valid_action_source() -> None:
+    client = _FakeClient([_scenario(8, tick=1)])
+    env = CPUTrainingEnv(client)
+    env.reset(seed=1, level="classic")
+
+    with pytest.raises(ValueError, match="either action or action_selector"):
+        env.step(
+            {"horizontal": 0, "jump": False, "dash": False, "dash_direction": {"x": 0, "y": 0}, "down": False, "grab": False},
+            action_selector=lambda observation: (None, {}),
+        )
+
+    assert client.step_calls == 0
+
+
 def test_reset_surfaces_bridge_error_without_fabricating_observation() -> None:
     client = _FakeClient([])
     client.reset_error = CPUBridgeServerError("unknown_level", "Unsupported level.")

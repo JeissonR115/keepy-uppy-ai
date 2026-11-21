@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections.abc import Callable
 from typing import Any, Mapping, Protocol
 
 from keepy_ai.bridge.errors import CPUBridgeProtocolError
@@ -14,6 +15,7 @@ from keepy_ai.bridge.models import (
     Vector2,
 )
 from keepy_ai.godot.launcher import GodotSimulation
+from keepy_ai.graph.geometry import LevelGeometry
 
 _LEVELS = {"primary-flat", "hazard-arena", "classic", "sky-towers"}
 _ACTION_FIELDS = {
@@ -28,6 +30,8 @@ _ACTION_FIELDS = {
 
 class _BridgeClient(Protocol):
     def reset(self, seed: int, level: str) -> int: ...
+
+    def get_level_geometry(self, level: str | None = None) -> int: ...
 
     def step(self, n: int = 1) -> int: ...
 
@@ -107,16 +111,27 @@ class CPUTrainingEnv:
         return observation, {"seed": seed, "level": level}
 
     def step(
-        self, action: CPUIntent | Mapping[str, Any]
+        self,
+        action: CPUIntent | Mapping[str, Any] | None = None,
+        *,
+        action_selector: Callable[
+            [CPUObservation], tuple[CPUIntent | Mapping[str, Any], Mapping[str, Any]]
+        ]
+        | None = None,
     ) -> tuple[CPUObservation, float, bool, bool, dict[str, Any]]:
         if self._closed:
             raise RuntimeError("The environment is closed.")
         if self._done or self._level is None:
             raise RuntimeError("Reset the environment before stepping it.")
-        intent = _coerce_action(action)
+        if action_selector is not None and action is not None:
+            raise ValueError("Provide either action or action_selector, not both.")
+        if action_selector is None and action is None:
+            raise ValueError("An action or action_selector is required.")
+        intent = _coerce_action(action) if action_selector is None else None
 
         command_sequence = self._bridge().step(1)
         action_sequence: int | None = None
+        policy_decision: Mapping[str, Any] | None = None
         asynchronous_events: list[EpisodeEvent] = []
         while True:
             message = self._bridge().receive()
@@ -125,6 +140,13 @@ class CPUTrainingEnv:
                     raise CPUBridgeProtocolError(
                         "A one-tick step emitted more than one action observation."
                     )
+                if action_selector is not None:
+                    selected_action, policy_decision = action_selector(message.observation)
+                    if not isinstance(policy_decision, Mapping):
+                        raise ValueError("action_selector decision record must be a mapping.")
+                    intent = _coerce_action(selected_action)
+                if intent is None:
+                    raise RuntimeError("No action was selected for the bridge observation.")
                 self._bridge().send_action(message.sequence, intent)
                 action_sequence = message.sequence
             elif isinstance(message, EpisodeEventMessage):
@@ -158,6 +180,8 @@ class CPUTrainingEnv:
                     "episode_ended": ended,
                     "events": events,
                 }
+                if policy_decision is not None:
+                    info["policy_decision"] = dict(policy_decision)
                 if ended:
                     terminal_event = _terminal_event(events)
                     info["episode_event"] = terminal_event
@@ -165,6 +189,35 @@ class CPUTrainingEnv:
                         terminal_event.reason if terminal_event is not None else None
                     )
                 return observation, 0.0, ended, False, info
+
+    def get_level_geometry(self, level: str | None = None) -> LevelGeometry:
+        if self._closed or self._done or self._level is None:
+            raise RuntimeError("Reset the environment before requesting level geometry.")
+        requested_level = level or self._level
+        if requested_level != self._level:
+            raise ValueError("Geometry can only be requested for the active level.")
+        sequence = self._bridge().get_level_geometry(requested_level)
+        while True:
+            message = self._bridge().receive()
+            if isinstance(message, CommandResultMessage):
+                if message.sequence != sequence:
+                    raise CPUBridgeProtocolError(
+                        "Geometry result sequence does not match the request."
+                    )
+                geometry = LevelGeometry.from_payload(message.result)
+                if geometry.level != requested_level:
+                    raise CPUBridgeProtocolError(
+                        f"Geometry returned {geometry.level!r}, expected {requested_level!r}."
+                    )
+                return geometry
+            if isinstance(message, ObservationMessage):
+                raise CPUBridgeProtocolError(
+                    "Geometry request unexpectedly requested a player action."
+                )
+            if isinstance(message, EpisodeEventMessage):
+                raise CPUBridgeProtocolError(
+                    "Geometry request unexpectedly emitted an episode event."
+                )
 
     def close(self) -> None:
         if self._closed:

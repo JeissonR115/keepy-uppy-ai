@@ -1,0 +1,30 @@
+{
+  "discarded_candidates": [],
+  "edge_counts": {
+    "DASH": 0,
+    "DROP": 0,
+    "JUMP": 0,
+    "WALK": 3,
+    "WALL_JUMP": 0
+  },
+  "geometry_path": "/media/disk/Dev/keepy-uppy-ai/geometry/primary-flat.json",
+  "graph_path": "/media/disk/Dev/keepy-uppy-ai/graphs/primary-flat.json",
+  "level": "primary-flat",
+  "node_count": 4,
+  "route_check": {
+    "destination_node": 4,
+    "distance_to_destination": 4.83349609375,
+    "final_position": {
+      "x": 299.16650390625,
+      "y": 152.0
+    },
+    "passed": true,
+    "route_node_ids": [
+      3,
+      4
+    ],
+    "start_node": 3,
+    "steps": 30
+  },
+  "unreachable_node_ids": []
+}

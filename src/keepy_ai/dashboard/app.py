@@ -25,18 +25,18 @@ from keepy_ai.dashboard.data import (
     report_metrics,
     spatial_view,
 )
-from keepy_ai.env.environment import CPUTrainingEnv
 from keepy_ai.godot.launcher import GodotConfig, GodotLaunchError, GodotSimulation
 
 
 def main() -> None:
     st.set_page_config(page_title="Keepy Uppy AI", layout="wide")
     for key in (
-        "live_env",
         "live_simulation",
+        "live_client",
         "live_observation",
         "live_route",
         "live_root",
+        "live_done",
     ):
         st.session_state.setdefault(key, None)
     st.title("Keepy Uppy AI · Inspector")
@@ -69,6 +69,8 @@ def show_levels(root: Path) -> None:
     missing = [name for name, path in paths.items() if path is None]
     if missing:
         st.warning("Faltan artefactos: " + ", ".join(missing))
+        st.caption("Genéralos desde la raíz del proyecto con el comando:")
+        st.code(f"uv run generate-graph --level {level}", language="bash")
         return
     try:
         graph = load_graph(paths["graph"])
@@ -276,7 +278,7 @@ def show_live(_root: Path) -> None:
         f"{config.level} · semilla {config.seed} · velocidad {config.speed:g}× · "
         f"modo {config.mode}"
     )
-    if st.session_state.get("live_env") is None:
+    if st.session_state.get("live_simulation") is None:
         if st.button("Iniciar simulación", type="primary"):
             try:
                 _start_live(config, _root)
@@ -293,10 +295,12 @@ def show_live(_root: Path) -> None:
 
 def _start_live(config: GodotConfig, root: Path) -> None:
     simulation = GodotSimulation(config)
-    env = CPUTrainingEnv(simulation=simulation)
     st.session_state.live_simulation = simulation
-    st.session_state.live_env = env
-    observation, _info = env.reset(seed=config.seed, level=config.level)
+    client = simulation.start()
+    st.session_state.live_client = client
+    reset_sequence = client.reset(seed=config.seed, level=config.level)
+    reset_result = _receive_live_result(client, reset_sequence)
+    observation = CPUObservation.from_payload(reset_result.get("observation"))
     route: list[int] = []
     paths = discover_levels(root).get(config.level, {})
     if paths.get("graph") is not None:
@@ -340,10 +344,11 @@ def _start_live(config: GodotConfig, root: Path) -> None:
                 for node_id in raw_route
             ):
                 route = raw_route
-    st.session_state.live_env = env
+    st.session_state.live_client = client
     st.session_state.live_observation = observation
     st.session_state.live_route = route
     st.session_state.live_root = root
+    st.session_state.live_done = False
 
 
 def _receive_live_result(client: Any, sequence: int) -> dict[str, Any]:
@@ -358,16 +363,22 @@ def _receive_live_result(client: Any, sequence: int) -> dict[str, Any]:
 
 @st.fragment(run_every=1.0)
 def _render_live_tick() -> None:
-    env: CPUTrainingEnv | None = st.session_state.get("live_env")
-    if env is None:
-        st.info("No hay una sesión en vivo activa. Inicia la simulación para conectar Godot.")
+    client = st.session_state.get("live_client")
+    if client is None:
+        st.info(
+            "No hay una sesión en vivo activa. Inicia la simulación para conectar Godot."
+        )
+        return
+    if st.session_state.get("live_done", False):
+        st.warning(
+            "La partida terminó. Detén y vuelve a iniciar la simulación para reiniciarla."
+        )
         return
     try:
-        observation, _reward, terminated, _truncated, info = env.step(CPUIntent())
+        observation, action_queued, terminated, info = _advance_live_tick(client)
         st.session_state.live_observation = observation
         if terminated:
-            st.warning(f"La ronda terminó: {info.get('reason') or 'sin motivo indicado'}.")
-            return
+            st.session_state.live_done = True
     except Exception as error:
         st.error(f"Se perdió la sesión de Godot: {error}")
         _stop_live()
@@ -394,12 +405,41 @@ def _render_live_tick() -> None:
             f"velocidad ({observation.balloon.velocity.x:.1f}, "
             f"{observation.balloon.velocity.y:.1f})"
         )
+    control_source = (
+        "intención neutral de Python (se aplica en el siguiente tick)"
+        if action_queued
+        else "controlador activo de Godot"
+    )
     st.caption(
         f"Tick {observation.tick} · turno {observation.current_turn or '—'} · "
-        f"puntos {observation.score.points} · acción Python: intención neutral "
-        f"(aplicada en el tick siguiente)"
+        f"puntos {observation.score.points} · control: {control_source}"
     )
+    if terminated:
+        st.warning(f"La partida terminó: {info.get('reason') or 'sin motivo indicado'}.")
     _render_live_route(st.session_state.live_root, observation.level)
+
+
+def _advance_live_tick(
+    client: Any,
+) -> tuple[CPUObservation, bool, bool, dict[str, Any]]:
+    sequence = client.step(1)
+    action_queued = False
+    while True:
+        message = client.receive()
+        if isinstance(message, ObservationMessage):
+            client.send_action(message.sequence, CPUIntent())
+            action_queued = True
+            continue
+        if isinstance(message, EpisodeEventMessage):
+            continue
+        if not isinstance(message, CommandResultMessage) or message.sequence != sequence:
+            raise GodotLaunchError("El puente respondió fuera de secuencia durante el paso.")
+        result = message.result
+        observation = CPUObservation.from_payload(result.get("observation"))
+        ended = result.get("episode_ended")
+        if not isinstance(ended, bool):
+            raise GodotLaunchError("Godot devolvió un indicador episode_ended inválido.")
+        return observation, action_queued, ended, result
 
 
 def _render_live_route(root: Path, level: str) -> None:
@@ -442,18 +482,19 @@ def _render_live_route(root: Path, level: str) -> None:
 
 
 def _stop_live() -> None:
-    env = st.session_state.get("live_env")
-    if env is not None:
+    simulation = st.session_state.get("live_simulation")
+    if simulation is not None:
         try:
-            env.close()
+            simulation.close()
         except Exception:
             pass
     for key in (
-        "live_env",
         "live_simulation",
+        "live_client",
         "live_observation",
         "live_route",
         "live_root",
+        "live_done",
     ):
         st.session_state.pop(key, None)
 

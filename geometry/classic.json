@@ -1,0 +1,6290 @@
+{
+  "auxiliary_bounds": [
+    {
+      "center": {
+        "x": 4.0,
+        "y": 90.0
+      },
+      "name": "SafeLeftBoundary",
+      "size": {
+        "x": 8.0,
+        "y": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 316.0,
+        "y": 90.0
+      },
+      "name": "SafeRightBoundary",
+      "size": {
+        "x": 8.0,
+        "y": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 160.0,
+        "y": 4.0
+      },
+      "name": "SafeCeilingBoundary",
+      "size": {
+        "x": 304.0,
+        "y": 8.0
+      }
+    }
+  ],
+  "bounds": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "size": {
+      "x": 320.0,
+      "y": 180.0
+    }
+  },
+  "collisions": [
+    {
+      "cell": {
+        "x": 0,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 4.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 1,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 12.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 0,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 4.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 1,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 12.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 2,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 20.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 3,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 28.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 2,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 20.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 3,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 28.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 4,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 36.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 5,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 44.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 4,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 36.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 5,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 44.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 8,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 68.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 9,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 76.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 8,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 68.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 9,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 76.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 10,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 84.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 11,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 92.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 10,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 84.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 11,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 92.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 12,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 100.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 13,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 108.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 12,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 100.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 13,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 108.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 14,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 116.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 15,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 124.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 14,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 116.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 15,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 124.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 16,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 132.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 17,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 140.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 16,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 132.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 17,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 140.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 18,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 148.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 19,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 156.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 18,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 148.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 19,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 156.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 20,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 164.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 21,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 172.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 20,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 164.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 21,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 172.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 22,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 180.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 23,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 188.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 22,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 180.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 23,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 188.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 24,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 196.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 25,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 204.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 24,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 196.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 25,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 204.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 26,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 212.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 27,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 220.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 26,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 212.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 27,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 220.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 28,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 228.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 29,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 236.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 28,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 228.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 29,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 236.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 30,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 244.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 31,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 252.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 30,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 244.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 31,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 252.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 34,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 276.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 35,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 284.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 34,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 276.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 35,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 284.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 36,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 292.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 37,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 300.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 36,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 292.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 37,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 300.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 38,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 308.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 39,
+        "y": 20
+      },
+      "cell_position": {
+        "x": 316.0,
+        "y": 164.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 38,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 308.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "cell": {
+        "x": 39,
+        "y": 21
+      },
+      "cell_position": {
+        "x": 316.0,
+        "y": 172.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ScoringFloorTiles"
+    },
+    {
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "shape": {
+        "size": {
+          "x": 16.0,
+          "y": 180.0
+        },
+        "type": "rectangle"
+      },
+      "source": "LeftBoundary/CollisionShape2D",
+      "transform": {
+        "origin": {
+          "x": 0.0,
+          "y": 90.0
+        },
+        "x_axis": {
+          "x": 1.0,
+          "y": 0.0
+        },
+        "y_axis": {
+          "x": 0.0,
+          "y": 1.0
+        }
+      }
+    },
+    {
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "shape": {
+        "size": {
+          "x": 16.0,
+          "y": 180.0
+        },
+        "type": "rectangle"
+      },
+      "source": "RightBoundary/CollisionShape2D",
+      "transform": {
+        "origin": {
+          "x": 320.0,
+          "y": 90.0
+        },
+        "x_axis": {
+          "x": 1.0,
+          "y": 0.0
+        },
+        "y_axis": {
+          "x": 0.0,
+          "y": 1.0
+        }
+      }
+    },
+    {
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "shape": {
+        "size": {
+          "x": 320.0,
+          "y": 8.0
+        },
+        "type": "rectangle"
+      },
+      "source": "CeilingBoundary/CollisionShape2D",
+      "transform": {
+        "origin": {
+          "x": 160.0,
+          "y": 0.0
+        },
+        "x_axis": {
+          "x": 1.0,
+          "y": 0.0
+        },
+        "y_axis": {
+          "x": 0.0,
+          "y": 1.0
+        }
+      }
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 8
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 68.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 8
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 68.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 9
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 76.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 9
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 76.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 10
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 84.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 10
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 84.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 11
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 92.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 11
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 92.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 12
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 100.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 12
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 100.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 13
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 108.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 13
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 108.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 8.0,
+          "y": 0.0
+        },
+        {
+          "x": 8.0,
+          "y": 8.0
+        },
+        {
+          "x": 0.0,
+          "y": 8.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 8.0,
+          "y": 0.0
+        },
+        {
+          "x": 8.0,
+          "y": 8.0
+        },
+        {
+          "x": 0.0,
+          "y": 8.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 16
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 132.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 16
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 132.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 6,
+        "y": 17
+      },
+      "cell_position": {
+        "x": 52.0,
+        "y": 140.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 7,
+        "y": 17
+      },
+      "cell_position": {
+        "x": 60.0,
+        "y": 140.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 8
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 68.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 8
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 68.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 9
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 76.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 9
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 76.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 10
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 84.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 10
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 84.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 11
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 92.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 11
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 92.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 12
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 100.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 12
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 100.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 13
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 108.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 13
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 108.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 8.0,
+          "y": 0.0
+        },
+        {
+          "x": 8.0,
+          "y": 8.0
+        },
+        {
+          "x": 0.0,
+          "y": 8.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 8.0,
+          "y": 0.0
+        },
+        {
+          "x": 8.0,
+          "y": 8.0
+        },
+        {
+          "x": 0.0,
+          "y": 8.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 16
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 132.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 16
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 132.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 32,
+        "y": 17
+      },
+      "cell_position": {
+        "x": 260.0,
+        "y": 140.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    },
+    {
+      "cell": {
+        "x": 33,
+        "y": 17
+      },
+      "cell_position": {
+        "x": 268.0,
+        "y": 140.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 1,
+      "collision_mask": 0,
+      "one_way": false,
+      "one_way_margin": 1.0,
+      "physics_layer": 0,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "ClimbableWallTiles"
+    }
+  ],
+  "level": "classic",
+  "movement_constants": {
+    "AIR_MULT": 0.65,
+    "CEILING_CORNER_CORRECTION": 4.0,
+    "CEILING_JUMP_GRACE": 0.05,
+    "CLIMB_CHECK_DIST": 2.0,
+    "CLIMB_DOWN_SPEED": 80.0,
+    "CLIMB_JUMP_COST": 27.5,
+    "CLIMB_MAX_STAMINA": 110.0,
+    "CLIMB_STILL_COST": 10.0,
+    "CLIMB_TIRED_ALPHA": 0.35,
+    "CLIMB_TIRED_BLINK_TIME": 0.2,
+    "CLIMB_TIRED_THRESHOLD": 20.0,
+    "CLIMB_UP_COST": 45.5,
+    "CLIMB_UP_SPEED": -45.0,
+    "COYOTE_TIME": 0.1,
+    "DASH_AFTERIMAGE_COUNT": 6,
+    "DASH_AFTERIMAGE_INTERVAL": 0.0333333333333333,
+    "DASH_AFTERIMAGE_LIFETIME": 0.18,
+    "DASH_COOLDOWN": 0.2,
+    "DASH_CORNER_CORRECTION": 4.0,
+    "DASH_FREEZE": 0.05,
+    "DASH_REFILL_COOLDOWN": 0.1,
+    "DASH_SPEED": 300.0,
+    "DASH_SPEED_PULSE": 0.2,
+    "DASH_TIME": 0.2,
+    "DUCK_COLLISION_HEIGHT_REDUCTION": 6.0,
+    "DUCK_SUPER_X_MULT": 1.25,
+    "DUCK_SUPER_Y_MULT": 0.5,
+    "END_DASH_SPEED": 160.0,
+    "END_DASH_UP_MULT": 0.75,
+    "FAST_MAX_ACCEL": 350.0,
+    "FAST_MAX_FALL": 330.0,
+    "GRAVITY": 1100.0,
+    "HALF_GRAV_THRESHOLD": 40.0,
+    "JUMP_BUFFER": 0.08,
+    "JUMP_CUT_MULTIPLIER": 0.5,
+    "JUMP_H_BOOST": 50.0,
+    "JUMP_SPEED": -250.0,
+    "MAX_FALL": 220.0,
+    "MAX_RUN": 130.0,
+    "RUN_ACCEL": 1500.0,
+    "RUN_REDUCE": 600.0,
+    "SUPER_JUMP_H": 260.0,
+    "SUPER_WALL_JUMP_FORCE_TIME": 0.2,
+    "SUPER_WALL_JUMP_H": 170.0,
+    "SUPER_WALL_JUMP_SPEED": -160.0,
+    "SUPER_WALL_JUMP_VAR_TIME": 0.25,
+    "TRAMPOLINE_BOUNCE_SPEED": 280.0,
+    "ULTRA_MULT": 1.2,
+    "VAR_JUMP_TIME": 0.2,
+    "WALL_CHECK_DIST": 3.0,
+    "WALL_JUMP_FORCE_TIME": 0.16,
+    "WALL_JUMP_H": 130.0,
+    "WALL_SLIDE_START": 20.0,
+    "WALL_SLIDE_TIME": 1.2
+  },
+  "platforms": [
+    {
+      "cell": {
+        "x": 8,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 68.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 9,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 76.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 8,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 68.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 9,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 76.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 10,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 84.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 11,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 92.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 10,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 84.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 11,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 92.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 12,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 100.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 13,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 108.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 12,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 100.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 13,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 108.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 14,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 116.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 15,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 124.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 14,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 116.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 15,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 124.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 24,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 196.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 25,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 204.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 24,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 196.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 25,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 204.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 26,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 212.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 27,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 220.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 26,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 212.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 27,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 220.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 28,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 228.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 29,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 236.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 28,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 228.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 29,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 236.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 30,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 244.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 31,
+        "y": 14
+      },
+      "cell_position": {
+        "x": 252.0,
+        "y": 116.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 30,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 244.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    },
+    {
+      "cell": {
+        "x": 31,
+        "y": 15
+      },
+      "cell_position": {
+        "x": 252.0,
+        "y": 124.0
+      },
+      "cell_transform": {
+        "alternative": 0,
+        "flip_h": false,
+        "flip_v": false,
+        "transpose": false
+      },
+      "collision_layer": 4,
+      "collision_mask": 0,
+      "one_way": true,
+      "one_way_margin": 2.0,
+      "physics_layer": 1,
+      "points": [
+        {
+          "x": -4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": -4.0
+        },
+        {
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "x": -4.0,
+          "y": 4.0
+        }
+      ],
+      "source": "OneWayPlatforms"
+    }
+  ],
+  "safe_bounds": {
+    "position": {
+      "x": 8.0,
+      "y": 8.0
+    },
+    "size": {
+      "x": 304.0,
+      "y": 164.0
+    }
+  },
+  "schema_version": 1,
+  "spawns": {
+    "player_1": {
+      "x": 72.0,
+      "y": 144.0
+    },
+    "player_2": {
+      "x": 248.0,
+      "y": 144.0
+    }
+  }
+}

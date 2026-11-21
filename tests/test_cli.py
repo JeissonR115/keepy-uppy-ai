@@ -6,7 +6,7 @@ from typing import Any
 
 import pytest
 
-from keepy_ai.cli import main, run_episode_batch
+from keepy_ai.cli import build_parser, main, run_episode_batch
 from keepy_ai.bridge.models import (
     CPUIntent,
     CPUObservation,
@@ -43,6 +43,19 @@ def _observation_payload() -> dict[str, Any]:
             "sets": {"player_1": 1, "player_2": 0},
         },
         "level": "classic",
+    }
+
+
+def _geometry_payload() -> dict[str, Any]:
+    return {
+        "schema_version": 1,
+        "level": "classic",
+        "bounds": {"position": {"x": 0, "y": 0}, "size": {"x": 320, "y": 180}},
+        "safe_bounds": {"position": {"x": 8, "y": 8}, "size": {"x": 304, "y": 164}},
+        "spawns": {"player_1": {"x": 72, "y": 144}, "player_2": {"x": 248, "y": 144}},
+        "collisions": [],
+        "platforms": [],
+        "movement_constants": {"MAX_RUN": 130, "GRAVITY": 1100, "JUMP_SPEED": -250},
     }
 
 
@@ -83,6 +96,7 @@ class _FakeBridge:
         self.resets: list[tuple[int, str]] = []
         self.closed = False
         self.faults_per_episode = faults_per_episode
+        self.geometry_calls = 0
 
     def reset(self, seed: int, level: str) -> int:
         self.resets.append((seed, level))
@@ -93,6 +107,13 @@ class _FakeBridge:
                 {"observation": _observation_payload()},
             )
         )
+        return self.command_sequence
+
+    def get_level_geometry(self, level: str | None = None) -> int:
+        assert level == "classic"
+        self.geometry_calls += 1
+        self.command_sequence += 1
+        self.messages.append(CommandResultMessage(self.command_sequence, _geometry_payload()))
         return self.command_sequence
 
     def step(self, n: int = 1) -> int:
@@ -147,7 +168,8 @@ def test_episode_batch_reports_seed_level_and_terminal_reason() -> None:
 
     assert bridge.resets == [(40, "classic"), (41, "classic")]
     assert len(bridge.actions) == 2
-    assert all(action == CPUIntent() for _, action in bridge.actions)
+    assert all(action != CPUIntent() for _, action in bridge.actions)
+    assert bridge.geometry_calls == 1
     assert bridge.closed
     assert [summary["seed"] for summary in summaries] == [40, 41]
     lines = [json.loads(line) for line in output.getvalue().splitlines()]
@@ -155,6 +177,45 @@ def test_episode_batch_reports_seed_level_and_terminal_reason() -> None:
     assert all(line["level"] == "classic" for line in lines)
     assert all(line["episode_event"] == "point" for line in lines)
     assert all(line["faults"] == 0 for line in lines)
+
+
+def test_episode_batch_neutral_mode_keeps_fixed_neutral_actions() -> None:
+    bridge = _FakeBridge()
+    stdout = io.StringIO()
+
+    with CPUTrainingEnv(bridge, owns_client=True) as env:
+        run_episode_batch(
+            env,
+            episode_count=1,
+            seed=7,
+            level="classic",
+            output=stdout,
+            policy_mode="neutral",
+        )
+
+    assert bridge.geometry_calls == 0
+    assert bridge.actions == [(1, CPUIntent())]
+
+
+def test_episode_batch_logs_each_policy_decision_as_jsonl() -> None:
+    bridge = _FakeBridge()
+    stdout = io.StringIO()
+    policy_log = io.StringIO()
+
+    with CPUTrainingEnv(bridge, owns_client=True) as env:
+        run_episode_batch(
+            env,
+            episode_count=1,
+            seed=7,
+            level="classic",
+            output=stdout,
+            policy_output=policy_log,
+        )
+
+    record = json.loads(policy_log.getvalue())
+    assert record["phase"] == "opponent_turn"
+    assert record["tick"] == 1
+    assert record["action"]["horizontal"] != 0
 
 
 def test_episode_batch_appends_jsonl_and_counts_faults() -> None:
@@ -201,6 +262,16 @@ def test_run_episode_help_lists_documented_options(capsys: pytest.CaptureFixture
         "--episode-count",
         "--godot-bin",
         "--project-path",
+        "--policy",
+        "--policy-log",
+        "--policy-preferred-distance",
+        "--policy-safety-margin",
     ):
         assert option in help_text
+
+
+def test_run_episode_defaults_to_adaptive_policy() -> None:
+    args = build_parser().parse_args([])
+
+    assert args.policy == "adaptive"
 

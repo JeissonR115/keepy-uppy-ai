@@ -1,0 +1,155 @@
+{
+  "auxiliary_bounds": [
+    {
+      "center": {
+        "x": 4.0,
+        "y": 90.0
+      },
+      "name": "SafeLeftBoundary",
+      "size": {
+        "x": 8.0,
+        "y": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 316.0,
+        "y": 90.0
+      },
+      "name": "SafeRightBoundary",
+      "size": {
+        "x": 8.0,
+        "y": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 160.0,
+        "y": 4.0
+      },
+      "name": "SafeCeilingBoundary",
+      "size": {
+        "x": 304.0,
+        "y": 8.0
+      }
+    }
+  ],
+  "bounds": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "size": {
+      "x": 320.0,
+      "y": 180.0
+    }
+  },
+  "collisions": [
+    {
+      "collision_layer": 1,
+      "collision_mask": 1,
+      "one_way": false,
+      "shape": {
+        "size": {
+          "x": 304.0,
+          "y": 12.0
+        },
+        "type": "rectangle"
+      },
+      "source": "Floor/CollisionShape2D",
+      "transform": {
+        "origin": {
+          "x": 160.0,
+          "y": 166.0
+        },
+        "x_axis": {
+          "x": 1.0,
+          "y": 0.0
+        },
+        "y_axis": {
+          "x": 0.0,
+          "y": 1.0
+        }
+      }
+    }
+  ],
+  "level": "primary-flat",
+  "movement_constants": {
+    "AIR_MULT": 0.65,
+    "CEILING_CORNER_CORRECTION": 4.0,
+    "CEILING_JUMP_GRACE": 0.05,
+    "CLIMB_CHECK_DIST": 2.0,
+    "CLIMB_DOWN_SPEED": 80.0,
+    "CLIMB_JUMP_COST": 27.5,
+    "CLIMB_MAX_STAMINA": 110.0,
+    "CLIMB_STILL_COST": 10.0,
+    "CLIMB_TIRED_ALPHA": 0.35,
+    "CLIMB_TIRED_BLINK_TIME": 0.2,
+    "CLIMB_TIRED_THRESHOLD": 20.0,
+    "CLIMB_UP_COST": 45.5,
+    "CLIMB_UP_SPEED": -45.0,
+    "COYOTE_TIME": 0.1,
+    "DASH_AFTERIMAGE_COUNT": 6,
+    "DASH_AFTERIMAGE_INTERVAL": 0.0333333333333333,
+    "DASH_AFTERIMAGE_LIFETIME": 0.18,
+    "DASH_COOLDOWN": 0.2,
+    "DASH_CORNER_CORRECTION": 4.0,
+    "DASH_FREEZE": 0.05,
+    "DASH_REFILL_COOLDOWN": 0.1,
+    "DASH_SPEED": 300.0,
+    "DASH_SPEED_PULSE": 0.2,
+    "DASH_TIME": 0.2,
+    "DUCK_COLLISION_HEIGHT_REDUCTION": 6.0,
+    "DUCK_SUPER_X_MULT": 1.25,
+    "DUCK_SUPER_Y_MULT": 0.5,
+    "END_DASH_SPEED": 160.0,
+    "END_DASH_UP_MULT": 0.75,
+    "FAST_MAX_ACCEL": 350.0,
+    "FAST_MAX_FALL": 330.0,
+    "GRAVITY": 1100.0,
+    "HALF_GRAV_THRESHOLD": 40.0,
+    "JUMP_BUFFER": 0.08,
+    "JUMP_CUT_MULTIPLIER": 0.5,
+    "JUMP_H_BOOST": 50.0,
+    "JUMP_SPEED": -250.0,
+    "MAX_FALL": 220.0,
+    "MAX_RUN": 130.0,
+    "RUN_ACCEL": 1500.0,
+    "RUN_REDUCE": 600.0,
+    "SUPER_JUMP_H": 260.0,
+    "SUPER_WALL_JUMP_FORCE_TIME": 0.2,
+    "SUPER_WALL_JUMP_H": 170.0,
+    "SUPER_WALL_JUMP_SPEED": -160.0,
+    "SUPER_WALL_JUMP_VAR_TIME": 0.25,
+    "TRAMPOLINE_BOUNCE_SPEED": 280.0,
+    "ULTRA_MULT": 1.2,
+    "VAR_JUMP_TIME": 0.2,
+    "WALL_CHECK_DIST": 3.0,
+    "WALL_JUMP_FORCE_TIME": 0.16,
+    "WALL_JUMP_H": 130.0,
+    "WALL_SLIDE_START": 20.0,
+    "WALL_SLIDE_TIME": 1.2
+  },
+  "platforms": [],
+  "safe_bounds": {
+    "position": {
+      "x": 8.0,
+      "y": 8.0
+    },
+    "size": {
+      "x": 304.0,
+      "y": 164.0
+    }
+  },
+  "schema_version": 1,
+  "spawns": {
+    "player_1": {
+      "x": 80.0,
+      "y": 152.0
+    },
+    "player_2": {
+      "x": 240.0,
+      "y": 152.0
+    }
+  }
+}

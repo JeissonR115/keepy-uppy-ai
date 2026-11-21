@@ -1,0 +1,7379 @@
+{
+  "discarded_candidates": [
+    {
+      "action": "DASH",
+      "from": 1,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 44.9251708984375,
+          "y": 231.995727539062
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 44.9251708984375,
+          "y": 231.995727539062
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 46,
+        "reason": "",
+        "start_position": {
+          "x": 20.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 2
+    },
+    {
+      "action": "JUMP",
+      "from": 1,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 45.7377700805664,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 45.7377700805664,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 20.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 2
+    },
+    {
+      "action": "DASH",
+      "from": 2,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0143098831177,
+          "y": 232.499053955078
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0143098831177,
+          "y": 232.499053955078
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 18,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:10.05",
+      "to": 1
+    },
+    {
+      "action": "JUMP",
+      "from": 2,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759925842285,
+          "y": 231.995635986328
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759925842285,
+          "y": 231.995635986328
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:9.78",
+      "to": 1
+    },
+    {
+      "action": "DASH",
+      "from": 2,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 106.856391906738,
+          "y": 232.433334350586
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 106.856391906738,
+          "y": 232.433334350586
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:70.99",
+      "to": 5
+    },
+    {
+      "action": "JUMP",
+      "from": 2,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 45.7377700805664,
+          "y": 231.933166503906
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 45.7377700805664,
+          "y": 231.933166503906
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:10.50",
+      "to": 5
+    },
+    {
+      "action": "DASH",
+      "from": 2,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 44.9251708984375,
+          "y": 231.99169921875
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 44.9251708984375,
+          "y": 231.99169921875
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:100.44",
+      "to": 17
+    },
+    {
+      "action": "JUMP",
+      "from": 2,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 45.7377700805664,
+          "y": 231.933166503906
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 45.7377700805664,
+          "y": 231.933166503906
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:99.95",
+      "to": 17
+    },
+    {
+      "action": "DASH",
+      "from": 3,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 28.0,
+          "y": 231.996765136719
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 28.0,
+          "y": 231.996765136719
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 2
+    },
+    {
+      "action": "JUMP",
+      "from": 3,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 28.0,
+          "y": 231.995101928711
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 28.0,
+          "y": 231.995101928711
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 2
+    },
+    {
+      "action": "DASH",
+      "from": 3,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 44.9251708984375,
+          "y": 231.999496459961
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 44.9251708984375,
+          "y": 231.999496459961
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 46,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:14.95",
+      "to": 4
+    },
+    {
+      "action": "JUMP",
+      "from": 3,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 45.7377700805664,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 45.7377700805664,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 28.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:15.40",
+      "to": 4
+    },
+    {
+      "action": "DASH",
+      "from": 4,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759925842285,
+          "y": 232.4970703125
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759925842285,
+          "y": 232.4970703125
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:17.51",
+      "to": 3
+    },
+    {
+      "action": "JUMP",
+      "from": 4,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759925842285,
+          "y": 231.995635986328
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759925842285,
+          "y": 231.995635986328
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:17.39",
+      "to": 3
+    },
+    {
+      "action": "DASH",
+      "from": 4,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 113.671379089355,
+          "y": 232.433349609375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 113.671379089355,
+          "y": 232.433349609375
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:69.81",
+      "to": 6
+    },
+    {
+      "action": "JUMP",
+      "from": 4,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 58.4638137817383,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 58.4638137817383,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 21,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:14.99",
+      "to": 6
+    },
+    {
+      "action": "DASH",
+      "from": 4,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 44.9252471923828,
+          "y": 231.988433837891
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 44.9252471923828,
+          "y": 231.988433837891
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 50,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:100.44",
+      "to": 17
+    },
+    {
+      "action": "JUMP",
+      "from": 4,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 58.4638137817383,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 58.4638137817383,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 21,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:93.65",
+      "to": 17
+    },
+    {
+      "action": "DASH",
+      "from": 5,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759792327881,
+          "y": 231.995727539062
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759792327881,
+          "y": 231.995727539062
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 46,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 2
+    },
+    {
+      "action": "JUMP",
+      "from": 5,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759925842285,
+          "y": 231.99560546875
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759925842285,
+          "y": 231.99560546875
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 2
+    },
+    {
+      "action": "DASH",
+      "from": 5,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 36.0,
+          "y": 231.996765136719
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 36.0,
+          "y": 231.996765136719
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 4
+    },
+    {
+      "action": "JUMP",
+      "from": 5,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 36.0,
+          "y": 231.995101928711
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 36.0,
+          "y": 231.995101928711
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 4
+    },
+    {
+      "action": "DASH",
+      "from": 5,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 44.9251899719238,
+          "y": 231.99397277832
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 44.9251899719238,
+          "y": 231.99397277832
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:33.31",
+      "to": 10
+    },
+    {
+      "action": "JUMP",
+      "from": 5,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 45.7377700805664,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 45.7377700805664,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 36.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:32.53",
+      "to": 10
+    },
+    {
+      "action": "DASH",
+      "from": 6,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759792327881,
+          "y": 231.991973876953
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759792327881,
+          "y": 231.991973876953
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 44.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.66",
+      "to": 4
+    },
+    {
+      "action": "JUMP",
+      "from": 6,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759925842285,
+          "y": 231.99560546875
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759925842285,
+          "y": 231.99560546875
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 44.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.66",
+      "to": 4
+    },
+    {
+      "action": "DASH",
+      "from": 6,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 44.9252014160156,
+          "y": 231.990798950195
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 44.9252014160156,
+          "y": 231.990798950195
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 44.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:33.31",
+      "to": 10
+    },
+    {
+      "action": "JUMP",
+      "from": 6,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 60.6372451782227,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 60.6372451782227,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 16,
+        "reason": "",
+        "start_position": {
+          "x": 44.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:19.45",
+      "to": 10
+    },
+    {
+      "action": "DASH",
+      "from": 7,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759801864624,
+          "y": 231.98583984375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759801864624,
+          "y": 231.98583984375
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 38,
+        "reason": "",
+        "start_position": {
+          "x": 52.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.66",
+      "to": 4
+    },
+    {
+      "action": "JUMP",
+      "from": 7,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759925842285,
+          "y": 231.999145507812
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759925842285,
+          "y": 231.999145507812
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 81,
+        "reason": "",
+        "start_position": {
+          "x": 52.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.66",
+      "to": 4
+    },
+    {
+      "action": "DASH",
+      "from": 7,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 131.135040283203,
+          "y": 231.996887207031
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 131.135040283203,
+          "y": 231.996887207031
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 32,
+        "reason": "",
+        "start_position": {
+          "x": 52.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:56.43",
+      "to": 10
+    },
+    {
+      "action": "JUMP",
+      "from": 7,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.993377685547,
+          "y": 231.999404907227
+        },
+        "landed": false,
+        "landing_position": null,
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 1200,
+        "reason": "landing_timeout",
+        "start_position": {
+          "x": 52.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_timeout",
+      "to": 10
+    },
+    {
+      "action": "DASH",
+      "from": 8,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759792327881,
+          "y": 231.97966003418
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759792327881,
+          "y": 231.97966003418
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 60.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.65",
+      "to": 4
+    },
+    {
+      "action": "JUMP",
+      "from": 8,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 46.378116607666,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 46.378116607666,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 10,
+        "reason": "",
+        "start_position": {
+          "x": 60.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:15.82",
+      "to": 4
+    },
+    {
+      "action": "DASH",
+      "from": 8,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 134.709930419922,
+          "y": 231.999710083008
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 134.709930419922,
+          "y": 231.999710083008
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 60.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:59.92",
+      "to": 10
+    },
+    {
+      "action": "JUMP",
+      "from": 8,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 129.787887573242,
+          "y": 159.925445556641
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 129.787887573242,
+          "y": 159.925445556641
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 60.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:80.64",
+      "to": 10
+    },
+    {
+      "action": "DASH",
+      "from": 9,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0747985839844,
+          "y": 231.990798950195
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0747985839844,
+          "y": 231.990798950195
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 68.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:33.31",
+      "to": 4
+    },
+    {
+      "action": "JUMP",
+      "from": 9,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 51.3627471923828,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 51.3627471923828,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 16,
+        "reason": "",
+        "start_position": {
+          "x": 68.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:19.45",
+      "to": 4
+    },
+    {
+      "action": "DASH",
+      "from": 9,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 124.959159851074,
+          "y": 231.98974609375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 124.959159851074,
+          "y": 231.98974609375
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 44,
+        "reason": "",
+        "start_position": {
+          "x": 68.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:50.41",
+      "to": 10
+    },
+    {
+      "action": "JUMP",
+      "from": 9,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 139.232543945312,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 139.232543945312,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 68.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:92.91",
+      "to": 10
+    },
+    {
+      "action": "DASH",
+      "from": 10,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759925842285,
+          "y": 232.4970703125
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759925842285,
+          "y": 232.4970703125
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:57.10",
+      "to": 9
+    },
+    {
+      "action": "JUMP",
+      "from": 10,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 53.5361366271973,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 53.5361366271973,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 21,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:14.99",
+      "to": 9
+    },
+    {
+      "action": "DASH",
+      "from": 10,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 154.856399536133,
+          "y": 232.433334350586
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 154.856399536133,
+          "y": 232.433334350586
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:70.99",
+      "to": 14
+    },
+    {
+      "action": "JUMP",
+      "from": 10,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 157.825942993164,
+          "y": 151.933441162109
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 157.825942993164,
+          "y": 151.933441162109
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:106.00",
+      "to": 14
+    },
+    {
+      "action": "DASH",
+      "from": 11,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0748138427734,
+          "y": 231.99397277832
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0748138427734,
+          "y": 231.99397277832
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:33.31",
+      "to": 4
+    },
+    {
+      "action": "JUMP",
+      "from": 11,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:32.53",
+      "to": 4
+    },
+    {
+      "action": "DASH",
+      "from": 11,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 76.0,
+          "y": 231.996765136719
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 76.0,
+          "y": 231.996765136719
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 10
+    },
+    {
+      "action": "JUMP",
+      "from": 11,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 76.0,
+          "y": 231.995101928711
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 76.0,
+          "y": 231.995101928711
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 10
+    },
+    {
+      "action": "DASH",
+      "from": 11,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 110.527770996094,
+          "y": 159.99528503418
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 110.527770996094,
+          "y": 159.99528503418
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:67.32",
+      "to": 12
+    },
+    {
+      "action": "JUMP",
+      "from": 11,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 141.741226196289,
+          "y": 151.933441162109
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 141.741226196289,
+          "y": 151.933441162109
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 76.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:91.90",
+      "to": 12
+    },
+    {
+      "action": "DASH",
+      "from": 12,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759925842285,
+          "y": 232.496826171875
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759925842285,
+          "y": 232.496826171875
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 80.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:65.08",
+      "to": 11
+    },
+    {
+      "action": "JUMP",
+      "from": 12,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622222900391,
+          "y": 231.933731079102
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622222900391,
+          "y": 231.933731079102
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 80.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:10.50",
+      "to": 11
+    },
+    {
+      "action": "DASH",
+      "from": 12,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 157.962478637695,
+          "y": 232.433822631836
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 157.962478637695,
+          "y": 232.433822631836
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 80.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:74.10",
+      "to": 14
+    },
+    {
+      "action": "JUMP",
+      "from": 12,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 161.478897094727,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 161.478897094727,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 80.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:108.58",
+      "to": 14
+    },
+    {
+      "action": "DASH",
+      "from": 13,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0759925842285,
+          "y": 232.497177124023
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0759925842285,
+          "y": 232.497177124023
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 84.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:65.08",
+      "to": 11
+    },
+    {
+      "action": "JUMP",
+      "from": 13,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622375488281,
+          "y": 231.933166503906
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622375488281,
+          "y": 231.933166503906
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 84.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:10.50",
+      "to": 11
+    },
+    {
+      "action": "DASH",
+      "from": 13,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 162.856399536133,
+          "y": 232.433334350586
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 162.856399536133,
+          "y": 232.433334350586
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 84.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:70.99",
+      "to": 15
+    },
+    {
+      "action": "JUMP",
+      "from": 13,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 217.479034423828,
+          "y": 231.933807373047
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 217.479034423828,
+          "y": 231.933807373047
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 65,
+        "reason": "",
+        "start_position": {
+          "x": 84.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:125.54",
+      "to": 15
+    },
+    {
+      "action": "DASH",
+      "from": 14,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0743713378906,
+          "y": 231.979217529297
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0743713378906,
+          "y": 231.979217529297
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 51,
+        "reason": "",
+        "start_position": {
+          "x": 84.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:17.62",
+      "to": 12
+    },
+    {
+      "action": "JUMP",
+      "from": 14,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 84.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:18.20",
+      "to": 12
+    },
+    {
+      "action": "DASH",
+      "from": 14,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 84.0,
+          "y": 151.962371826172
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 84.0,
+          "y": 151.962371826172
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 84.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:68.04",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 14,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 84.0,
+          "y": 151.999923706055
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 84.0,
+          "y": 151.999923706055
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 84.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:68.00",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 15,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0748291015625,
+          "y": 231.995727539062
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0748291015625,
+          "y": 231.995727539062
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 46,
+        "reason": "",
+        "start_position": {
+          "x": 92.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 15,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 92.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 16,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.2541656494141,
+          "y": 232.488433837891
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.2541656494141,
+          "y": 232.488433837891
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:15.25",
+      "to": 10
+    },
+    {
+      "action": "JUMP",
+      "from": 16,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0004425048828,
+          "y": 231.925201416016
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0004425048828,
+          "y": 231.925201416016
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 120,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:66.08",
+      "to": 10
+    },
+    {
+      "action": "DASH",
+      "from": 16,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 184.979537963867,
+          "y": 232.496627807617
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 184.979537963867,
+          "y": 232.496627807617
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:95.72",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 16,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 209.616958618164,
+          "y": 111.91822052002
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 209.616958618164,
+          "y": 111.91822052002
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 54,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:78.41",
+      "to": 24
+    },
+    {
+      "action": "DASH",
+      "from": 17,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0754623413086,
+          "y": 232.493057250977
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0754623413086,
+          "y": 232.493057250977
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 40,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:15.35",
+      "to": 10
+    },
+    {
+      "action": "JUMP",
+      "from": 17,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0002584457397,
+          "y": 231.925140380859
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0002584457397,
+          "y": 231.925140380859
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 116,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:66.08",
+      "to": 10
+    },
+    {
+      "action": "DASH",
+      "from": 17,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 100.0,
+          "y": 151.996688842773
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 100.0,
+          "y": 151.996688842773
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 16
+    },
+    {
+      "action": "JUMP",
+      "from": 17,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 100.0,
+          "y": 151.995071411133
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 100.0,
+          "y": 151.995071411133
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 16
+    },
+    {
+      "action": "DASH",
+      "from": 17,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 187.102981567383,
+          "y": 232.496154785156
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 187.102981567383,
+          "y": 232.496154785156
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:63.26",
+      "to": 21
+    },
+    {
+      "action": "JUMP",
+      "from": 17,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 268.732788085938,
+          "y": 231.933731079102
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 268.732788085938,
+          "y": 231.933731079102
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 82,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:144.79",
+      "to": 21
+    },
+    {
+      "action": "DASH",
+      "from": 17,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 182.532440185547,
+          "y": 231.994155883789
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 182.532440185547,
+          "y": 231.994155883789
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 52,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:101.35",
+      "to": 23
+    },
+    {
+      "action": "JUMP",
+      "from": 17,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 268.732788085938,
+          "y": 231.933731079102
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 268.732788085938,
+          "y": 231.933731079102
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 82,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:158.19",
+      "to": 23
+    },
+    {
+      "action": "DASH",
+      "from": 18,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0747756958008,
+          "y": 231.996490478516
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0747756958008,
+          "y": 231.996490478516
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 18,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 18,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 134.527786254883,
+          "y": 159.99528503418
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 134.527786254883,
+          "y": 159.99528503418
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:13.18",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 18,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 223.232772827148,
+          "y": 231.933807373047
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 223.232772827148,
+          "y": 231.933807373047
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 100.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:118.21",
+      "to": 24
+    },
+    {
+      "action": "DASH",
+      "from": 19,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0748748779297,
+          "y": 231.992736816406
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0748748779297,
+          "y": 231.992736816406
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 38,
+        "reason": "",
+        "start_position": {
+          "x": 108.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 19,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 108.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 19,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 136.307525634766,
+          "y": 159.991683959961
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 136.307525634766,
+          "y": 159.991683959961
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 108.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.55",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 19,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 231.232803344727,
+          "y": 231.933807373047
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 231.232803344727,
+          "y": 231.933807373047
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 108.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:123.97",
+      "to": 24
+    },
+    {
+      "action": "DASH",
+      "from": 20,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0747985839844,
+          "y": 231.997573852539
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0747985839844,
+          "y": 231.997573852539
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 116.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 20,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622375488281,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 116.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 21,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0748138427734,
+          "y": 231.993957519531
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0748138427734,
+          "y": 231.993957519531
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 124.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 21,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622222900391,
+          "y": 231.933578491211
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622222900391,
+          "y": 231.933578491211
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 87,
+        "reason": "",
+        "start_position": {
+          "x": 124.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 22,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0748062133789,
+          "y": 231.999298095703
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0748062133789,
+          "y": 231.999298095703
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 29,
+        "reason": "",
+        "start_position": {
+          "x": 132.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 22,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622222900391,
+          "y": 231.93342590332
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622222900391,
+          "y": 231.93342590332
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 87,
+        "reason": "",
+        "start_position": {
+          "x": 132.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 23,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0746994018555,
+          "y": 232.496627807617
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0746994018555,
+          "y": 232.496627807617
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:90.68",
+      "to": 17
+    },
+    {
+      "action": "JUMP",
+      "from": 23,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 11.0001840591431,
+          "y": 231.925247192383
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 11.0001840591431,
+          "y": 231.925247192383
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 118,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:122.33",
+      "to": 17
+    },
+    {
+      "action": "DASH",
+      "from": 23,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 216.800567626953,
+          "y": 232.490493774414
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 216.800567626953,
+          "y": 232.490493774414
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:52.99",
+      "to": 28
+    },
+    {
+      "action": "JUMP",
+      "from": 23,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 245.312347412109,
+          "y": 103.933708190918
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 245.312347412109,
+          "y": 103.933708190918
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 52,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:148.34",
+      "to": 28
+    },
+    {
+      "action": "DASH",
+      "from": 23,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 215.498977661133,
+          "y": 111.933311462402
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 215.498977661133,
+          "y": 111.933311462402
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 25,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:17.28",
+      "to": 37
+    },
+    {
+      "action": "JUMP",
+      "from": 23,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 245.312347412109,
+          "y": 103.933708190918
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 245.312347412109,
+          "y": 103.933708190918
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 52,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:17.75",
+      "to": 37
+    },
+    {
+      "action": "DASH",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0747451782227,
+          "y": 231.994155883789
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0747451782227,
+          "y": 231.994155883789
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 52,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:97.71",
+      "to": 16
+    },
+    {
+      "action": "JUMP",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 44.0081481933594,
+          "y": 105.345375061035
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 44.0081481933594,
+          "y": 105.345375061035
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:65.85",
+      "to": 16
+    },
+    {
+      "action": "DASH",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.2661666870117,
+          "y": 232.498840332031
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.2661666870117,
+          "y": 232.498840332031
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:48.94",
+      "to": 20
+    },
+    {
+      "action": "JUMP",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 44.0081481933594,
+          "y": 105.345375061035
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 44.0081481933594,
+          "y": 105.345375061035
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:142.22",
+      "to": 20
+    },
+    {
+      "action": "DASH",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 140.0,
+          "y": 151.996688842773
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 140.0,
+          "y": 151.996688842773
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 23
+    },
+    {
+      "action": "JUMP",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 140.0,
+          "y": 151.995071411133
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 140.0,
+          "y": 151.995071411133
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 23
+    },
+    {
+      "action": "DASH",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 227.102966308594,
+          "y": 232.496154785156
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 227.102966308594,
+          "y": 232.496154785156
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:63.26",
+      "to": 28
+    },
+    {
+      "action": "JUMP",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 235.06608581543,
+          "y": 103.93384552002
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 235.06608581543,
+          "y": 103.93384552002
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:142.98",
+      "to": 28
+    },
+    {
+      "action": "DASH",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 207.37174987793,
+          "y": 111.837333679199
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 207.37174987793,
+          "y": 111.837333679199
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 20,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:23.78",
+      "to": 37
+    },
+    {
+      "action": "JUMP",
+      "from": 24,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 235.06608581543,
+          "y": 103.93384552002
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 235.06608581543,
+          "y": 103.93384552002
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:8.09",
+      "to": 37
+    },
+    {
+      "action": "DASH",
+      "from": 25,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0748062133789,
+          "y": 231.993118286133
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0748062133789,
+          "y": 231.993118286133
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 29,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 25,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622222900391,
+          "y": 231.932830810547
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622222900391,
+          "y": 231.932830810547
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 140.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 26,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 67.0748291015625,
+          "y": 231.993499755859
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 67.0748291015625,
+          "y": 231.993499755859
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 148.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 26,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.8038940429688,
+          "y": 231.933792114258
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.8038940429688,
+          "y": 231.933792114258
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 148.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.93",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 27,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 72.1825408935547,
+          "y": 231.988983154297
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 72.1825408935547,
+          "y": 231.988983154297
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 156.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:16.83",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 27,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 84.7674560546875,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 84.7674560546875,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 156.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:68.07",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 28,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 80.0711212158203,
+          "y": 231.933456420898
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 80.0711212158203,
+          "y": 231.933456420898
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 27,
+        "reason": "",
+        "start_position": {
+          "x": 164.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.56",
+      "to": 13
+    },
+    {
+      "action": "JUMP",
+      "from": 28,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 92.7674331665039,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 92.7674331665039,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 164.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:68.63",
+      "to": 13
+    },
+    {
+      "action": "DASH",
+      "from": 29,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 143.692489624023,
+          "y": 159.991683959961
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 143.692489624023,
+          "y": 159.991683959961
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 172.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.55",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 29,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 101.125465393066,
+          "y": 151.933364868164
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 101.125465393066,
+          "y": 151.933364868164
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 172.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:39.07",
+      "to": 24
+    },
+    {
+      "action": "DASH",
+      "from": 30,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 145.472229003906,
+          "y": 159.99528503418
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 145.472229003906,
+          "y": 159.99528503418
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 180.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:13.18",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 30,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 114.32145690918,
+          "y": 151.933441162109
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 114.32145690918,
+          "y": 151.933441162109
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 180.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:25.98",
+      "to": 24
+    },
+    {
+      "action": "DASH",
+      "from": 31,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 147.852340698242,
+          "y": 160.161697387695
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 147.852340698242,
+          "y": 160.161697387695
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 24,
+        "reason": "",
+        "start_position": {
+          "x": 188.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:14.48",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 31,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 116.767349243164,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 116.767349243164,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 188.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:23.56",
+      "to": 24
+    },
+    {
+      "action": "DASH",
+      "from": 32,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 150.785446166992,
+          "y": 231.996307373047
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 150.785446166992,
+          "y": 231.996307373047
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 196.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:84.69",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 32,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 124.767318725586,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 124.767318725586,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 196.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:15.73",
+      "to": 24
+    },
+    {
+      "action": "DASH",
+      "from": 33,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 154.342193603516,
+          "y": 231.989349365234
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 154.342193603516,
+          "y": 231.989349365234
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 47,
+        "reason": "",
+        "start_position": {
+          "x": 204.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:85.21",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 35,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 153.100662231445,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 153.100662231445,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 220.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:13.68",
+      "to": 24
+    },
+    {
+      "action": "DASH",
+      "from": 36,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 155.2900390625,
+          "y": 151.991180419922
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 155.2900390625,
+          "y": 151.991180419922
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 92.0
+        }
+      },
+      "reason": "landing_mismatch:19.43",
+      "to": 23
+    },
+    {
+      "action": "JUMP",
+      "from": 36,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.7443084716797,
+          "y": 231.933502197266
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.7443084716797,
+          "y": 231.933502197266
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 130,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 92.0
+        }
+      },
+      "reason": "landing_mismatch:117.55",
+      "to": 23
+    },
+    {
+      "action": "DASH",
+      "from": 36,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 312.9794921875,
+          "y": 232.492767333984
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 312.9794921875,
+          "y": 232.492767333984
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 58,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 92.0
+        }
+      },
+      "reason": "landing_mismatch:139.92",
+      "to": 44
+    },
+    {
+      "action": "JUMP",
+      "from": 36,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 389.644866943359,
+          "y": 151.933349609375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 389.644866943359,
+          "y": 151.933349609375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 78,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 92.0
+        }
+      },
+      "reason": "landing_mismatch:132.27",
+      "to": 44
+    },
+    {
+      "action": "DASH",
+      "from": 37,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 133.771423339844,
+          "y": 152.499710083008
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 133.771423339844,
+          "y": 152.499710083008
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:13.97",
+      "to": 23
+    },
+    {
+      "action": "JUMP",
+      "from": 37,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 66.2622222900391,
+          "y": 231.93376159668
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 66.2622222900391,
+          "y": 231.93376159668
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 125,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:117.85",
+      "to": 23
+    },
+    {
+      "action": "DASH",
+      "from": 37,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 228.0,
+          "y": 103.99666595459
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 228.0,
+          "y": 103.99666595459
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 36
+    },
+    {
+      "action": "JUMP",
+      "from": 37,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 228.0,
+          "y": 103.995056152344
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 228.0,
+          "y": 103.995056152344
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 36
+    },
+    {
+      "action": "JUMP",
+      "from": 37,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 379.398681640625,
+          "y": 151.933319091797
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 379.398681640625,
+          "y": 151.933319091797
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 74,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:155.30",
+      "to": 40
+    },
+    {
+      "action": "DASH",
+      "from": 37,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 310.532379150391,
+          "y": 231.990295410156
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 310.532379150391,
+          "y": 231.990295410156
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 65,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:146.31",
+      "to": 43
+    },
+    {
+      "action": "JUMP",
+      "from": 37,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 379.398681640625,
+          "y": 151.933319091797
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 379.398681640625,
+          "y": 151.933319091797
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 74,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:126.50",
+      "to": 43
+    },
+    {
+      "action": "JUMP",
+      "from": 38,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 161.358825683594,
+          "y": 152.234619140625
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 161.358825683594,
+          "y": 152.234619140625
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 228.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.77",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 39,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 158.267288208008,
+          "y": 159.933380126953
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 158.267288208008,
+          "y": 159.933380126953
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 40,
+        "reason": "",
+        "start_position": {
+          "x": 236.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.82",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 39,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 359.232086181641,
+          "y": 231.932876586914
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 359.232086181641,
+          "y": 231.932876586914
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 236.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:86.11",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 40,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 120.767211914062,
+          "y": 231.932876586914
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 120.767211914062,
+          "y": 231.932876586914
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 244.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:86.11",
+      "to": 24
+    },
+    {
+      "action": "JUMP",
+      "from": 40,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 321.732238769531,
+          "y": 159.933380126953
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 321.732238769531,
+          "y": 159.933380126953
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 40,
+        "reason": "",
+        "start_position": {
+          "x": 244.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.82",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 41,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 318.998992919922,
+          "y": 152.085952758789
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 318.998992919922,
+          "y": 152.085952758789
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 33,
+        "reason": "",
+        "start_position": {
+          "x": 252.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.39",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 42,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 326.898986816406,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 326.898986816406,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 260.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:13.68",
+      "to": 55
+    },
+    {
+      "action": "DASH",
+      "from": 43,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 183.020477294922,
+          "y": 232.492767333984
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 183.020477294922,
+          "y": 232.492767333984
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 58,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 92.0
+        }
+      },
+      "reason": "landing_mismatch:139.92",
+      "to": 37
+    },
+    {
+      "action": "JUMP",
+      "from": 43,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 106.354034423828,
+          "y": 151.933334350586
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 106.354034423828,
+          "y": 151.933334350586
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 78,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 92.0
+        }
+      },
+      "reason": "landing_mismatch:132.27",
+      "to": 37
+    },
+    {
+      "action": "DASH",
+      "from": 43,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 353.613220214844,
+          "y": 152.489929199219
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 353.613220214844,
+          "y": 152.489929199219
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 34,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 92.0
+        }
+      },
+      "reason": "landing_mismatch:18.47",
+      "to": 54
+    },
+    {
+      "action": "JUMP",
+      "from": 43,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.196136474609,
+          "y": 231.93342590332
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.196136474609,
+          "y": 231.93342590332
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 132,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 92.0
+        }
+      },
+      "reason": "landing_mismatch:117.51",
+      "to": 54
+    },
+    {
+      "action": "DASH",
+      "from": 44,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 185.467575073242,
+          "y": 231.990295410156
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 185.467575073242,
+          "y": 231.990295410156
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 65,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:146.31",
+      "to": 36
+    },
+    {
+      "action": "JUMP",
+      "from": 44,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 116.600463867188,
+          "y": 151.933319091797
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 116.600463867188,
+          "y": 151.933319091797
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 74,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:126.50",
+      "to": 36
+    },
+    {
+      "action": "JUMP",
+      "from": 44,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 116.600463867188,
+          "y": 151.933319091797
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 116.600463867188,
+          "y": 151.933319091797
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 74,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:162.33",
+      "to": 42
+    },
+    {
+      "action": "DASH",
+      "from": 44,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 268.0,
+          "y": 103.99666595459
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 268.0,
+          "y": 103.99666595459
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 43
+    },
+    {
+      "action": "JUMP",
+      "from": 44,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 268.0,
+          "y": 103.995056152344
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 268.0,
+          "y": 103.995056152344
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 43
+    },
+    {
+      "action": "DASH",
+      "from": 44,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 361.156585693359,
+          "y": 152.491134643555
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 361.156585693359,
+          "y": 152.491134643555
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 34,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:24.57",
+      "to": 54
+    },
+    {
+      "action": "JUMP",
+      "from": 44,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.507751464844,
+          "y": 231.933456420898
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.507751464844,
+          "y": 231.933456420898
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 127,
+        "reason": "",
+        "start_position": {
+          "x": 268.0,
+          "y": 100.0
+        }
+      },
+      "reason": "landing_mismatch:117.71",
+      "to": 54
+    },
+    {
+      "action": "DASH",
+      "from": 46,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 325.657897949219,
+          "y": 231.989349365234
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 325.657897949219,
+          "y": 231.989349365234
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 47,
+        "reason": "",
+        "start_position": {
+          "x": 276.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:85.21",
+      "to": 55
+    },
+    {
+      "action": "DASH",
+      "from": 47,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 329.214630126953,
+          "y": 231.996307373047
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 329.214630126953,
+          "y": 231.996307373047
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 284.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:84.69",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 47,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 355.232299804688,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 355.232299804688,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 284.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:15.73",
+      "to": 55
+    },
+    {
+      "action": "DASH",
+      "from": 48,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 332.147674560547,
+          "y": 160.161697387695
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 332.147674560547,
+          "y": 160.161697387695
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 24,
+        "reason": "",
+        "start_position": {
+          "x": 292.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:14.48",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 48,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 363.232299804688,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 363.232299804688,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 292.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:23.56",
+      "to": 55
+    },
+    {
+      "action": "DASH",
+      "from": 49,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 334.527679443359,
+          "y": 159.99528503418
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 334.527679443359,
+          "y": 159.99528503418
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 300.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:13.18",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 49,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 371.232299804688,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 371.232299804688,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 300.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:31.48",
+      "to": 55
+    },
+    {
+      "action": "DASH",
+      "from": 50,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 336.307556152344,
+          "y": 159.991683959961
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 336.307556152344,
+          "y": 159.991683959961
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 308.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.55",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 50,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 379.232299804688,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 379.232299804688,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 308.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:39.43",
+      "to": 55
+    },
+    {
+      "action": "DASH",
+      "from": 51,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 399.928863525391,
+          "y": 231.933456420898
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 399.928863525391,
+          "y": 231.933456420898
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 27,
+        "reason": "",
+        "start_position": {
+          "x": 316.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.56",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 51,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 387.232299804688,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 387.232299804688,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 316.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:68.63",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 52,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 407.817504882812,
+          "y": 231.988983154297
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 407.817504882812,
+          "y": 231.988983154297
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 324.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:16.83",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 52,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 395.232299804688,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 395.232299804688,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 324.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:68.07",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 53,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925170898438,
+          "y": 231.993499755859
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925170898438,
+          "y": 231.993499755859
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 332.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 53,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 397.739044189453,
+          "y": 151.933441162109
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 397.739044189453,
+          "y": 151.933441162109
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 332.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:68.09",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 54,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 263.199279785156,
+          "y": 232.490493774414
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 263.199279785156,
+          "y": 232.490493774414
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:52.99",
+      "to": 51
+    },
+    {
+      "action": "JUMP",
+      "from": 54,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 234.688079833984,
+          "y": 103.933708190918
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 234.688079833984,
+          "y": 103.933708190918
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 52,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:148.34",
+      "to": 51
+    },
+    {
+      "action": "DASH",
+      "from": 54,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925323486328,
+          "y": 232.496612548828
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925323486328,
+          "y": 232.496612548828
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:90.68",
+      "to": 62
+    },
+    {
+      "action": "JUMP",
+      "from": 54,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.999847412109,
+          "y": 231.925247192383
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.999847412109,
+          "y": 231.925247192383
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 118,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:122.33",
+      "to": 62
+    },
+    {
+      "action": "DASH",
+      "from": 55,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 252.896957397461,
+          "y": 232.496154785156
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 252.896957397461,
+          "y": 232.496154785156
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:63.26",
+      "to": 51
+    },
+    {
+      "action": "JUMP",
+      "from": 55,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 244.934387207031,
+          "y": 103.93384552002
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 244.934387207031,
+          "y": 103.93384552002
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:142.98",
+      "to": 51
+    },
+    {
+      "action": "DASH",
+      "from": 55,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 340.0,
+          "y": 151.996688842773
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 340.0,
+          "y": 151.996688842773
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 54
+    },
+    {
+      "action": "JUMP",
+      "from": 55,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 340.0,
+          "y": 151.995071411133
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 340.0,
+          "y": 151.995071411133
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 54
+    },
+    {
+      "action": "DASH",
+      "from": 55,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.733917236328,
+          "y": 232.498840332031
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.733917236328,
+          "y": 232.498840332031
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:48.94",
+      "to": 59
+    },
+    {
+      "action": "JUMP",
+      "from": 55,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 435.085906982422,
+          "y": 107.504722595215
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 435.085906982422,
+          "y": 107.504722595215
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:139.90",
+      "to": 59
+    },
+    {
+      "action": "DASH",
+      "from": 55,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925262451172,
+          "y": 231.994155883789
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925262451172,
+          "y": 231.994155883789
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 52,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:97.71",
+      "to": 61
+    },
+    {
+      "action": "JUMP",
+      "from": 55,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 435.085906982422,
+          "y": 107.504722595215
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 435.085906982422,
+          "y": 107.504722595215
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:63.96",
+      "to": 61
+    },
+    {
+      "action": "DASH",
+      "from": 56,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925201416016,
+          "y": 231.993118286133
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925201416016,
+          "y": 231.993118286133
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 29,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 56,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.73779296875,
+          "y": 231.933685302734
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.73779296875,
+          "y": 231.933685302734
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 340.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 57,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925201416016,
+          "y": 231.999298095703
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925201416016,
+          "y": 231.999298095703
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 29,
+        "reason": "",
+        "start_position": {
+          "x": 348.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 57,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.73779296875,
+          "y": 231.93342590332
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.73779296875,
+          "y": 231.93342590332
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 87,
+        "reason": "",
+        "start_position": {
+          "x": 348.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 58,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925201416016,
+          "y": 231.993988037109
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925201416016,
+          "y": 231.993988037109
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 356.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 58,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.73779296875,
+          "y": 231.933578491211
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.73779296875,
+          "y": 231.933578491211
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 87,
+        "reason": "",
+        "start_position": {
+          "x": 356.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 59,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925231933594,
+          "y": 231.997573852539
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925231933594,
+          "y": 231.997573852539
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 364.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 59,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 364.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 60,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 343.692443847656,
+          "y": 159.991683959961
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 343.692443847656,
+          "y": 159.991683959961
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 372.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.55",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 60,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 248.767883300781,
+          "y": 231.933807373047
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 248.767883300781,
+          "y": 231.933807373047
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 372.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:123.97",
+      "to": 55
+    },
+    {
+      "action": "DASH",
+      "from": 60,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925140380859,
+          "y": 231.992736816406
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925140380859,
+          "y": 231.992736816406
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 38,
+        "reason": "",
+        "start_position": {
+          "x": 372.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 60,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 372.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 61,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 295.0205078125,
+          "y": 232.496627807617
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 295.0205078125,
+          "y": 232.496627807617
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:95.72",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 61,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 274.688232421875,
+          "y": 103.933708190918
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 274.688232421875,
+          "y": 103.933708190918
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 52,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:78.79",
+      "to": 55
+    },
+    {
+      "action": "DASH",
+      "from": 61,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.740966796875,
+          "y": 232.485046386719
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.740966796875,
+          "y": 232.485046386719
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:15.24",
+      "to": 68
+    },
+    {
+      "action": "JUMP",
+      "from": 61,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.999328613281,
+          "y": 231.925170898438
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.999328613281,
+          "y": 231.925170898438
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 120,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 140.0
+        }
+      },
+      "reason": "landing_mismatch:66.08",
+      "to": 68
+    },
+    {
+      "action": "DASH",
+      "from": 62,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 297.467620849609,
+          "y": 231.994155883789
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 297.467620849609,
+          "y": 231.994155883789
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 52,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:101.35",
+      "to": 54
+    },
+    {
+      "action": "JUMP",
+      "from": 62,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 284.934478759766,
+          "y": 103.93384552002
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 284.934478759766,
+          "y": 103.93384552002
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:65.83",
+      "to": 54
+    },
+    {
+      "action": "DASH",
+      "from": 62,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 292.896942138672,
+          "y": 232.496154785156
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 292.896942138672,
+          "y": 232.496154785156
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:63.26",
+      "to": 58
+    },
+    {
+      "action": "JUMP",
+      "from": 62,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 284.934478759766,
+          "y": 103.93384552002
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 284.934478759766,
+          "y": 103.93384552002
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:142.98",
+      "to": 58
+    },
+    {
+      "action": "DASH",
+      "from": 62,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 380.0,
+          "y": 151.996688842773
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 380.0,
+          "y": 151.996688842773
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 61
+    },
+    {
+      "action": "JUMP",
+      "from": 62,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 380.0,
+          "y": 151.995071411133
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 380.0,
+          "y": 151.995071411133
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 61
+    },
+    {
+      "action": "DASH",
+      "from": 62,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.920989990234,
+          "y": 232.493057250977
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.920989990234,
+          "y": 232.493057250977
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 40,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:15.35",
+      "to": 68
+    },
+    {
+      "action": "JUMP",
+      "from": 62,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.999755859375,
+          "y": 231.925140380859
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.999755859375,
+          "y": 231.925140380859
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 116,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 148.0
+        }
+      },
+      "reason": "landing_mismatch:66.08",
+      "to": 68
+    },
+    {
+      "action": "DASH",
+      "from": 63,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 345.472320556641,
+          "y": 159.99528503418
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 345.472320556641,
+          "y": 159.99528503418
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:13.18",
+      "to": 55
+    },
+    {
+      "action": "JUMP",
+      "from": 63,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 256.767944335938,
+          "y": 231.933807373047
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 256.767944335938,
+          "y": 231.933807373047
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:118.21",
+      "to": 55
+    },
+    {
+      "action": "DASH",
+      "from": 63,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925231933594,
+          "y": 231.996490478516
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925231933594,
+          "y": 231.996490478516
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 63,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.737762451172,
+          "y": 231.933135986328
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.737762451172,
+          "y": 231.933135986328
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 380.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 64,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925201416016,
+          "y": 231.995727539062
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925201416016,
+          "y": 231.995727539062
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 46,
+        "reason": "",
+        "start_position": {
+          "x": 388.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 64,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 388.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 65,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 317.142791748047,
+          "y": 232.43327331543
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 317.142791748047,
+          "y": 232.43327331543
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 396.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:71.00",
+      "to": 64
+    },
+    {
+      "action": "JUMP",
+      "from": 65,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 262.521392822266,
+          "y": 231.933807373047
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 262.521392822266,
+          "y": 231.933807373047
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 65,
+        "reason": "",
+        "start_position": {
+          "x": 396.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:125.54",
+      "to": 64
+    },
+    {
+      "action": "DASH",
+      "from": 65,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924011230469,
+          "y": 232.497177124023
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924011230469,
+          "y": 232.497177124023
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 396.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:65.08",
+      "to": 69
+    },
+    {
+      "action": "JUMP",
+      "from": 65,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.737762451172,
+          "y": 231.933166503906
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.737762451172,
+          "y": 231.933166503906
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 396.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:10.50",
+      "to": 69
+    },
+    {
+      "action": "DASH",
+      "from": 66,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 396.0,
+          "y": 151.962371826172
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 396.0,
+          "y": 151.962371826172
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 396.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:68.04",
+      "to": 65
+    },
+    {
+      "action": "JUMP",
+      "from": 66,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 396.0,
+          "y": 151.999923706055
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 396.0,
+          "y": 151.999923706055
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 396.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:68.00",
+      "to": 65
+    },
+    {
+      "action": "DASH",
+      "from": 66,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925628662109,
+          "y": 231.979202270508
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925628662109,
+          "y": 231.979202270508
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 51,
+        "reason": "",
+        "start_position": {
+          "x": 396.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:17.62",
+      "to": 67
+    },
+    {
+      "action": "JUMP",
+      "from": 66,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 396.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:18.20",
+      "to": 67
+    },
+    {
+      "action": "DASH",
+      "from": 67,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 322.037475585938,
+          "y": 232.433822631836
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 322.037475585938,
+          "y": 232.433822631836
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 400.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:74.10",
+      "to": 66
+    },
+    {
+      "action": "JUMP",
+      "from": 67,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 318.521453857422,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 318.521453857422,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 400.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:108.58",
+      "to": 66
+    },
+    {
+      "action": "DASH",
+      "from": 67,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924011230469,
+          "y": 232.496826171875
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924011230469,
+          "y": 232.496826171875
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 400.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:65.08",
+      "to": 69
+    },
+    {
+      "action": "JUMP",
+      "from": 67,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.737823486328,
+          "y": 231.933731079102
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.737823486328,
+          "y": 231.933731079102
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 400.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:10.50",
+      "to": 69
+    },
+    {
+      "action": "DASH",
+      "from": 68,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 325.143585205078,
+          "y": 232.433334350586
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 325.143585205078,
+          "y": 232.433334350586
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:70.99",
+      "to": 66
+    },
+    {
+      "action": "JUMP",
+      "from": 68,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 322.521453857422,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 322.521453857422,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 41,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:105.76",
+      "to": 66
+    },
+    {
+      "action": "DASH",
+      "from": 68,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924011230469,
+          "y": 232.4970703125
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924011230469,
+          "y": 232.4970703125
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:57.10",
+      "to": 70
+    },
+    {
+      "action": "JUMP",
+      "from": 68,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 426.463165283203,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 426.463165283203,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 21,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:14.99",
+      "to": 70
+    },
+    {
+      "action": "DASH",
+      "from": 69,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 369.472320556641,
+          "y": 159.99528503418
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 369.472320556641,
+          "y": 159.99528503418
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 28,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:67.32",
+      "to": 67
+    },
+    {
+      "action": "JUMP",
+      "from": 69,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 332.767700195312,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 332.767700195312,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:95.67",
+      "to": 67
+    },
+    {
+      "action": "DASH",
+      "from": 69,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 404.0,
+          "y": 231.996765136719
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 404.0,
+          "y": 231.996765136719
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 68
+    },
+    {
+      "action": "JUMP",
+      "from": 69,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 404.0,
+          "y": 231.995101928711
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 404.0,
+          "y": 231.995101928711
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 68
+    },
+    {
+      "action": "DASH",
+      "from": 69,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925201416016,
+          "y": 231.99397277832
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925201416016,
+          "y": 231.99397277832
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:33.31",
+      "to": 74
+    },
+    {
+      "action": "JUMP",
+      "from": 69,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 413.737762451172,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 404.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:32.53",
+      "to": 74
+    },
+    {
+      "action": "DASH",
+      "from": 70,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 355.040863037109,
+          "y": 231.98974609375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 355.040863037109,
+          "y": 231.98974609375
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 44,
+        "reason": "",
+        "start_position": {
+          "x": 412.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:50.41",
+      "to": 68
+    },
+    {
+      "action": "JUMP",
+      "from": 70,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 340.767700195312,
+          "y": 151.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 340.767700195312,
+          "y": 151.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 37,
+        "reason": "",
+        "start_position": {
+          "x": 412.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:92.91",
+      "to": 68
+    },
+    {
+      "action": "DASH",
+      "from": 70,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 412.925231933594,
+          "y": 231.990798950195
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 412.925231933594,
+          "y": 231.990798950195
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 412.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:33.31",
+      "to": 74
+    },
+    {
+      "action": "JUMP",
+      "from": 70,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 428.63720703125,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 428.63720703125,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 16,
+        "reason": "",
+        "start_position": {
+          "x": 412.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:19.45",
+      "to": 74
+    },
+    {
+      "action": "DASH",
+      "from": 71,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 345.290008544922,
+          "y": 231.999710083008
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 345.290008544922,
+          "y": 231.999710083008
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 420.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:59.92",
+      "to": 68
+    },
+    {
+      "action": "JUMP",
+      "from": 71,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 350.212829589844,
+          "y": 159.933486938477
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 350.212829589844,
+          "y": 159.933486938477
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 420.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:80.63",
+      "to": 68
+    },
+    {
+      "action": "DASH",
+      "from": 71,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924041748047,
+          "y": 231.97966003418
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924041748047,
+          "y": 231.97966003418
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 35,
+        "reason": "",
+        "start_position": {
+          "x": 420.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.65",
+      "to": 74
+    },
+    {
+      "action": "JUMP",
+      "from": 71,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 433.621856689453,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 433.621856689453,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 10,
+        "reason": "",
+        "start_position": {
+          "x": 420.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:15.82",
+      "to": 74
+    },
+    {
+      "action": "DASH",
+      "from": 72,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 348.864929199219,
+          "y": 231.996887207031
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 348.864929199219,
+          "y": 231.996887207031
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 32,
+        "reason": "",
+        "start_position": {
+          "x": 428.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:56.43",
+      "to": 68
+    },
+    {
+      "action": "JUMP",
+      "from": 72,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 414.378143310547,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 414.378143310547,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 10,
+        "reason": "",
+        "start_position": {
+          "x": 428.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:15.82",
+      "to": 68
+    },
+    {
+      "action": "DASH",
+      "from": 72,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924041748047,
+          "y": 231.985855102539
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924041748047,
+          "y": 231.985855102539
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 38,
+        "reason": "",
+        "start_position": {
+          "x": 428.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.66",
+      "to": 74
+    },
+    {
+      "action": "JUMP",
+      "from": 72,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924011230469,
+          "y": 231.999145507812
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924011230469,
+          "y": 231.999145507812
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 81,
+        "reason": "",
+        "start_position": {
+          "x": 428.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.66",
+      "to": 74
+    },
+    {
+      "action": "DASH",
+      "from": 73,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 435.074768066406,
+          "y": 231.990798950195
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 435.074768066406,
+          "y": 231.990798950195
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 436.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:33.31",
+      "to": 68
+    },
+    {
+      "action": "JUMP",
+      "from": 73,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 419.362731933594,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 419.362731933594,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 16,
+        "reason": "",
+        "start_position": {
+          "x": 436.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:19.45",
+      "to": 68
+    },
+    {
+      "action": "DASH",
+      "from": 73,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924041748047,
+          "y": 231.991973876953
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924041748047,
+          "y": 231.991973876953
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 45,
+        "reason": "",
+        "start_position": {
+          "x": 436.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.66",
+      "to": 74
+    },
+    {
+      "action": "JUMP",
+      "from": 73,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924011230469,
+          "y": 231.99560546875
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924011230469,
+          "y": 231.99560546875
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 436.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:27.66",
+      "to": 74
+    },
+    {
+      "action": "DASH",
+      "from": 74,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 435.074737548828,
+          "y": 231.988433837891
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 435.074737548828,
+          "y": 231.988433837891
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 50,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:100.44",
+      "to": 62
+    },
+    {
+      "action": "JUMP",
+      "from": 74,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 421.536834716797,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 421.536834716797,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 21,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:93.65",
+      "to": 62
+    },
+    {
+      "action": "DASH",
+      "from": 74,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 366.328582763672,
+          "y": 232.433349609375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 366.328582763672,
+          "y": 232.433349609375
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:69.81",
+      "to": 73
+    },
+    {
+      "action": "JUMP",
+      "from": 74,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 421.536834716797,
+          "y": 231.93359375
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 421.536834716797,
+          "y": 231.93359375
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 21,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:14.99",
+      "to": 73
+    },
+    {
+      "action": "DASH",
+      "from": 74,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924011230469,
+          "y": 232.4970703125
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924011230469,
+          "y": 232.4970703125
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:17.51",
+      "to": 77
+    },
+    {
+      "action": "JUMP",
+      "from": 74,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924011230469,
+          "y": 231.995635986328
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924011230469,
+          "y": 231.995635986328
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:17.39",
+      "to": 77
+    },
+    {
+      "action": "DASH",
+      "from": 75,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 435.074798583984,
+          "y": 231.99397277832
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 435.074798583984,
+          "y": 231.99397277832
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 30,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:33.31",
+      "to": 68
+    },
+    {
+      "action": "JUMP",
+      "from": 75,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 434.262237548828,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 434.262237548828,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:32.53",
+      "to": 68
+    },
+    {
+      "action": "DASH",
+      "from": 75,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 444.0,
+          "y": 231.996765136719
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 444.0,
+          "y": 231.996765136719
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 74
+    },
+    {
+      "action": "JUMP",
+      "from": 75,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 444.0,
+          "y": 231.995101928711
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 444.0,
+          "y": 231.995101928711
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 74
+    },
+    {
+      "action": "DASH",
+      "from": 75,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924041748047,
+          "y": 231.995727539062
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924041748047,
+          "y": 231.995727539062
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 46,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 76
+    },
+    {
+      "action": "JUMP",
+      "from": 75,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924011230469,
+          "y": 231.99560546875
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924011230469,
+          "y": 231.99560546875
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 444.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.74",
+      "to": 76
+    },
+    {
+      "action": "DASH",
+      "from": 76,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 435.074798583984,
+          "y": 231.99169921875
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 435.074798583984,
+          "y": 231.99169921875
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 48,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:100.44",
+      "to": 62
+    },
+    {
+      "action": "JUMP",
+      "from": 76,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 434.262237548828,
+          "y": 231.933166503906
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 434.262237548828,
+          "y": 231.933166503906
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:99.95",
+      "to": 62
+    },
+    {
+      "action": "DASH",
+      "from": 76,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 373.143585205078,
+          "y": 232.433334350586
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 373.143585205078,
+          "y": 232.433334350586
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 19,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:70.99",
+      "to": 75
+    },
+    {
+      "action": "JUMP",
+      "from": 76,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 434.262237548828,
+          "y": 231.933166503906
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 434.262237548828,
+          "y": 231.933166503906
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:10.50",
+      "to": 75
+    },
+    {
+      "action": "DASH",
+      "from": 76,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.985656738281,
+          "y": 232.499053955078
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.985656738281,
+          "y": 232.499053955078
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 18,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:10.05",
+      "to": 78
+    },
+    {
+      "action": "JUMP",
+      "from": 76,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 468.924011230469,
+          "y": 231.995635986328
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 468.924011230469,
+          "y": 231.995635986328
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 90,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 220.0
+        }
+      },
+      "reason": "landing_mismatch:9.78",
+      "to": 78
+    },
+    {
+      "action": "DASH",
+      "from": 77,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 435.074798583984,
+          "y": 231.999496459961
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 435.074798583984,
+          "y": 231.999496459961
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 46,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:14.95",
+      "to": 74
+    },
+    {
+      "action": "JUMP",
+      "from": 77,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 434.262237548828,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 434.262237548828,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:15.40",
+      "to": 74
+    },
+    {
+      "action": "DASH",
+      "from": 77,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 452.0,
+          "y": 231.996765136719
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 452.0,
+          "y": 231.996765136719
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 53,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 76
+    },
+    {
+      "action": "JUMP",
+      "from": 77,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 452.0,
+          "y": 231.995101928711
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 452.0,
+          "y": 231.995101928711
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 61,
+        "reason": "",
+        "start_position": {
+          "x": 452.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:12.00",
+      "to": 76
+    },
+    {
+      "action": "DASH",
+      "from": 78,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 435.074798583984,
+          "y": 231.995727539062
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 435.074798583984,
+          "y": 231.995727539062
+        },
+        "level": "sky-towers",
+        "movement": "dash",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 46,
+        "reason": "",
+        "start_position": {
+          "x": 460.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:20.75",
+      "to": 76
+    },
+    {
+      "action": "JUMP",
+      "from": 78,
+      "probe": {
+        "action_started": true,
+        "final_position": {
+          "x": 434.262237548828,
+          "y": 231.933151245117
+        },
+        "landed": true,
+        "landing_position": {
+          "x": 434.262237548828,
+          "y": 231.933151245117
+        },
+        "level": "sky-towers",
+        "movement": "jump",
+        "physics_delta": 0.0166666666666667,
+        "physics_frames_elapsed": 86,
+        "reason": "",
+        "start_position": {
+          "x": 460.0,
+          "y": 228.0
+        }
+      },
+      "reason": "landing_mismatch:21.38",
+      "to": 76
+    }
+  ],
+  "edge_counts": {
+    "DASH": 30,
+    "DROP": 68,
+    "JUMP": 4,
+    "WALK": 70,
+    "WALL_JUMP": 0
+  },
+  "geometry_path": "geometry/sky-towers.json",
+  "graph_path": "graphs/sky-towers.json",
+  "level": "sky-towers",
+  "node_count": 78,
+  "route_check": {
+    "destination_node": 62,
+    "distance_to_destination": 6.372210964609134,
+    "final_position": {
+      "x": 375.034881591797,
+      "y": 151.994079589844
+    },
+    "passed": true,
+    "route_node_ids": [
+      67,
+      62
+    ],
+    "start_node": 67,
+    "steps": 30
+  },
+  "unreachable_node_ids": [
+    16,
+    23,
+    36,
+    43,
+    54,
+    61
+  ]
+}
